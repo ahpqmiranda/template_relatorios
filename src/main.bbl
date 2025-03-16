@@ -1,0 +1,33 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Çengel. 2012]{cengel_2012_transferencia}
+\abntrefinfo{Çengel.}{ÇENGEL.}{2012}
+{ÇENGEL., Y.~A. \textbf{Transferência De Calor E Massa : Uma Abordagem
+  Prática}. 4. ed. [S.l.]: Mcgraw Hill, 2012.}
+
+\bibitem[Ferreira 2016]{ferreira_2016_biblioteca}
+\abntrefinfo{Ferreira}{FERREIRA}{2016}
+{FERREIRA, R. \textbf{Biblioteca Digital Do IPG: Relatório De Projeto – Guia
+  Laboratorial De Um Permutador De Calor De Tubos Concêntricos}. Politécnico
+  Guarda, 2016.
+Dispon{\'\i}vel em: \url{https://bdigital.ipg.pt/dspace/handle/10314/3712}.}
+
+\bibitem[Orlando e Bohorquez 2014]{orlando_2014_aula}
+\abntrefinfo{Orlando e Bohorquez}{ORLANDO; BOHORQUEZ}{2014}
+{ORLANDO, W.; BOHORQUEZ, I. \textbf{Aula 24 -Trocadores de Calor}. 2014.
+Dispon{\'\i}vel em:
+  \url{https://www2.ufjf.br/washington\_irrazabal//files/2014/05/Aula-24\_Trocadores-de-Calor.pdf}.}
+
+\bibitem[Stenstrasser 2017]{stenstrasser_2017_projeto}
+\abntrefinfo{Stenstrasser}{STENSTRASSER}{2017}
+{STENSTRASSER, A.~M. Projeto de trocador de calor a placas por meio de
+  simulação computacional.
+\textbf{Ufsc.br}, Florianópolis, SC, 2017.
+Dispon{\'\i}vel em: \url{https://repositorio.ufsc.br/handle/123456789/188734}.}
+
+\end{thebibliography}

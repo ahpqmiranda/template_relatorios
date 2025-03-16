@@ -1,0 +1,2249 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.12) (preloaded format=xelatex 2025.2.12)  15 MAR 2025 14:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**src/main.tex %0 %S
+(src/main.tex
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-12-25>
+(/home/alan/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/home/alan/.miktex/texmfs/install/tex/latex/base/size11.clo
+File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count192
+\c@section=\count193
+\c@subsection=\count194
+\c@subsubsection=\count195
+\c@paragraph=\count196
+\c@subparagraph=\count197
+\c@figure=\count198
+\c@table=\count199
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/home/alan/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count266
+\Gm@cntv=\count267
+\c@Gm@tempcnt=\count268
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks18
+
+(/home/alan/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+! Undefined control sequence.
+<recently read> \usetikzlibrary 
+                                
+l.7 \usetikzlibrary
+                   {shapes, arrows.meta, positioning} % permite a utilização...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usetikzlibrary{s
+                     hapes, arrows.meta, positioning} % permite a utilização...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/home/alan/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 11
+6.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+))
+(/home/alan/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2025/01/01 v25.1 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count269
+\U@D=\dimen150
+\l@unhyphenated=\language1
+
+(/home/alan/.miktex/texmfs/install/tex/generic/babel/xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count270
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/alan/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/babel-portuges/brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Portuguese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 53.
+
+Package babel Info: Making " an active character on input line 143.
+)) (/home/alan/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count271
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
+
+(/home/alan/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count272
+\calc@Bcount=\count273
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count274
+\calc@Cskip=\skip53
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/abntex2/abntex2abrev.sty)
+(/home/alan/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\minimumbiblabelwidth=\skip54
+\ABCIauxlen=\skip55
+\c@ABCIaux=\count275
+\c@ABCImax=\count276
+
+(/home/alan/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip56
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks23
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks29
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen155
+\captionmargin=\dimen156
+\caption@leftmargin=\dimen157
+\caption@rightmargin=\dimen158
+\caption@width=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count277
+\c@continuedfloat=\count278
+Package caption Info: float package is loaded.
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count279
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count280
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count281
+\rotFPtop=\skip60
+\rotFPbot=\skip61
+\rot@float@box=\box54
+\rot@mess@toks=\toks31
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box55
+\extrarowheight=\dimen164
+\NC@list=\toks32
+\extratabsurround=\skip62
+\backup@length=\skip63
+\ar@cellbox=\box56
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip64
+\LTright=\skip65
+\LTpre=\skip66
+\LTpost=\skip67
+\LTchunksize=\count282
+\LTcapwidth=\dimen165
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count283
+\LT@rows=\count284
+\c@LT@tables=\count285
+\c@LT@chunks=\count286
+\LT@p@ftn=\toks33
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 149.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx))
+\everycr=\toks34
+\minrowclearance=\skip68
+\rownum=\count287
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen166
+\pgfutil@tempdimb=\dimen167
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box62
+) (/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeyslibraryfilt
+ered.code.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
+\pgf@xd=\dimen176
+\pgf@yd=\dimen177
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count292
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.
+def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-pd
+f.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count293
+)))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.c
+ode.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count294
+\pgfsyssoftpath@bigbuffer@items=\count295
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.c
+ode.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/home/alan/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen178
+\pgfmath@count=\count296
+\pgfmath@box=\box63
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.t
+ex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic.
+code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigon
+ometric.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.random
+.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.compar
+ison.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.c
+ode.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round.
+code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.c
+ode.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.intege
+rarithmetics.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count297
+)) (/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.cod
+e.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen179
+\pgf@picmaxx=\dimen180
+\pgf@picminy=\dimen181
+\pgf@picmaxy=\dimen182
+\pgf@pathminx=\dimen183
+\pgf@pathmaxx=\dimen184
+\pgf@pathminy=\dimen185
+\pgf@pathmaxy=\dimen186
+\pgf@xx=\dimen187
+\pgf@xy=\dimen188
+\pgf@yx=\dimen189
+\pgf@yy=\dimen190
+\pgf@zx=\dimen191
+\pgf@zy=\dimen192
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconstr
+uct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen193
+\pgf@path@lasty=\dimen194
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage.
+code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen195
+\pgf@shorten@start@additional=\dimen196
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.cod
+e.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count298
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicsta
+te.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen197
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransforma
+tions.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen198
+\pgf@pt@y=\dimen199
+\pgf@pt@temp=\dimen256
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.code
+.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.co
+de.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproces
+sing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.cod
+e.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen257
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.code
+.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen258
+\pgf@sys@shading@range@num=\count299
+\pgf@shadingcount=\count300
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.code
+.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.c
+ode.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box67
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.cod
+e.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparen
+cy.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.c
+ode.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code.t
+ex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.code
+.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box68
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.t
+ex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-
+0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-
+1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code
+.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothand
+lers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count301
+\pgfplotmarksize=\dimen263
+)
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikz@lastmovetox=\dimen268
+\tikz@lastmovetoy=\dimen269
+\tikzleveldistance=\dimen270
+\tikzsiblingdistance=\dimen271
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count302
+\tikznumberofchildren=\count303
+\tikznumberofcurrentchild=\count304
+\tikz@fig@count=\count305
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.code
+.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count306
+\pgfmatrixcurrentcolumn=\count307
+\pgf@matrix@numberofcolumns=\count308
+)
+\tikz@expandcount=\count309
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/home/alan/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(/home/alan/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip69
+
+For additional information on amsmath, use the `?' option.
+(/home/alan/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/home/alan/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks47
+\ex@=\dimen272
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen273
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count310
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count311
+\leftroot@=\count312
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count313
+\DOTSCASE@=\count314
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box73
+\strutbox@=\box74
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen274
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count315
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count316
+\dotsspace@=\muskip18
+\c@parentequation=\count317
+\dspbrk@lvl=\count318
+\tag@help=\toks48
+\row@=\count319
+\column@=\count320
+\maxfields@=\count321
+\andhelp@=\toks49
+\eqnshift@=\dimen275
+\alignsep@=\dimen276
+\tagshift@=\dimen277
+\tagwidth@=\dimen278
+\totwidth@=\dimen279
+\lineht@=\dimen280
+\@envbody=\toks50
+\multlinegap=\skip70
+\multlinetaggap=\skip71
+\mathdisplay@stack=\toks51
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g_MT_multlinerow_int=\count322
+\l_MT_multwidth_dim=\dimen281
+\origjot=\skip72
+\l_MT_shortvdotswithinadjustabove_dim=\dimen282
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen283
+\l_MT_above_intertext_sep=\dimen284
+\l_MT_below_intertext_sep=\dimen285
+\l_MT_above_shortintertext_sep=\dimen286
+\l_MT_below_shortintertext_sep=\dimen287
+\xmathstrut@box=\box75
+\xmathstrut@dim=\dimen288
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/home/alan/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(/home/alan/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/home/alan/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks52
+\t@pgfplots@tokb=\toks53
+\t@pgfplots@tokc=\toks54
+\pgfplots@tmpa=\dimen289
+\c@pgfplots@coordindex=\count323
+\c@pgfplots@scanlineindex=\count324
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.
+code.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.co
+de.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplots
+oldpgfsupp_loader.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code
+.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks55
+\t@pgf@tokb=\toks56
+\t@pgf@tokc=\toks57
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplots
+oldpgfsupp_pgfutil-common-lists.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.
+tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsl
+iststructure.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsl
+iststructureext.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsa
+rray.code.tex
+\c@pgfplotsarray@tmp=\count325
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsm
+atrix.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstables
+hared.code.tex
+\c@pgfplotstable@counta=\count326
+\t@pgfplotstable@a=\toks58
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsd
+eque.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.cod
+e.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.dat
+a.code.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.
+code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots
+.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count327
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.
+surfshading.pgfsys-xetex.def
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.
+surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count328
+))))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.c
+ode.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code
+.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.co
+de.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.co
+de.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler
+.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.c
+ode.tex)))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.t
+ex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing
+.code.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code
+.tex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.t
+ex)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarydecorations.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations
+.code.tex
+\pgfdecoratedcompleteddistance=\dimen290
+\pgfdecoratedremainingdistance=\dimen291
+\pgfdecoratedinputsegmentcompleteddistance=\dimen292
+\pgfdecoratedinputsegmentremainingdistance=\dimen293
+\pgf@decorate@distancetomove=\dimen294
+\pgf@decorate@repeatstate=\count329
+\pgfdecorationsegmentamplitude=\dimen295
+\pgfdecorationsegmentlength=\dimen296
+)
+\tikz@lib@dec@box=\box76
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarydecorations.pathmorphing.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflib
+rarydecorations.pathmorphing.code.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarydecorations.pathreplacing.code.tex
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflib
+rarydecorations.pathreplacing.code.tex))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplot
+s.contourlua.code.tex)
+\pgfplots@numplots=\count330
+\pgfplots@xmin@reg=\dimen297
+\pgfplots@xmax@reg=\dimen298
+\pgfplots@ymin@reg=\dimen299
+\pgfplots@ymax@reg=\dimen300
+\pgfplots@zmin@reg=\dimen301
+\pgfplots@zmax@reg=\dimen302
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmark
+s.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+
+LaTeX Warning: Package "xcolor" has already been loaded: ignoring load-time
+(LaTeX)        option "xcdraw".
+
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+
+(/home/alan/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/home/alan/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/home/alan/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.st
+y
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count331
+) (/home/alan/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count332
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen303
+\Hy@linkcounter=\count333
+\Hy@pagecounter=\count334
+
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count335
+
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count336
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen304
+
+(/home/alan/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count337
+\Field@Width=\dimen305
+\Fld@charsize=\dimen306
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count338
+\c@Item=\count339
+\c@Hfootnote=\count340
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-11-05 v7.01l Hyperref driver for XeTeX
+\pdfm@box=\box77
+\c@Hy@AnnotLevel=\count341
+\HyField@AnnotCount=\count342
+\Fld@listcount=\count343
+\c@bookmark@seq@number=\count344
+\Hy@SectionHShift=\skip73
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2025/01/31 v2.4 Modern multilingual typesetting with XeLaT
+eX and LuaLaTeX
+
+(/usr/local/share/miktex-texmf/tex/latex/fontspec/fontspec.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/alan/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-12-25 L3 programming layer (loader) 
+
+(/home/alan/.miktex/texmfs/install/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
+\g__graphics_track_int=\count345
+\l__pdf_internal_box=\box78
+\g__pdf_backend_annotation_int=\count346
+\g__pdf_backend_link_int=\count347
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/share/miktex-texmf/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count348
+\l__fontspec_language_int=\count349
+\l__fontspec_strnum_int=\count350
+\l__fontspec_tmp_int=\count351
+\l__fontspec_tmpa_int=\count352
+\l__fontspec_tmpb_int=\count353
+\l__fontspec_tmpc_int=\count354
+\l__fontspec_em_int=\count355
+\l__fontspec_emdef_int=\count356
+\l__fontspec_strong_int=\count357
+\l__fontspec_strongdef_int=\count358
+\l__fontspec_tmpa_dim=\dimen307
+\l__fontspec_tmpb_dim=\dimen308
+\l__fontspec_tmpc_dim=\dimen309
+
+(/home/alan/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/share/miktex-texmf/tex/latex/fontspec/fontspec.cfg)))
+
+Package polyglossia Warning: You have loaded both babel and polyglossia.
+(polyglossia)                The two packages are mutually exclusive!
+
+\l_xpg_alias_keyvals_int=\count359
+(/home/alan/.miktex/texmfs/install/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+
+
+Package polyglossia Warning: No hyphenation patterns were loaded for `latex'
+(polyglossia)                I will use \language=\l@nohyphenation instead.
+
+)) (/home/alan/.miktex/texmfs/install/tex/latex/polyglossia/gloss-brazil.ldf
+File: gloss-brazil.ldf polyglossia: module for Brazilian Portuguese
+
+(/home/alan/.miktex/texmfs/install/tex/latex/polyglossia/gloss-portuguese.ldf
+File: gloss-portuguese.ldf polyglossia: module for Portuguese
+
+
+Package polyglossia Warning: No hyphenation patterns were loaded for
+(polyglossia)                `portuguese'
+(polyglossia)                I will use \language=\l@nohyphenation instead.
+
+\portuguese@hyphen=\XeTeXcharclass4
+))
+
+Package polyglossia Info: Default language is portuguese
+
+ (/home/alan/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
+Package: microtype 2024/12/12 v3.2 Micro-typographical refinements (RS)
+\MT@toks=\toks59
+\MT@tempbox=\box79
+\MT@count=\count360
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1075.
+LaTeX Info: Redefining \leftprotrusion on input line 1076.
+\MT@prot@toks=\toks60
+LaTeX Info: Redefining \rightprotrusion on input line 1095.
+LaTeX Info: Redefining \textls on input line 1437.
+\MT@outer@kern=\dimen310
+LaTeX Info: Redefining \microtypecontext on input line 2041.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2058.
+\MT@listname@count=\count361
+
+(/home/alan/.miktex/texmfs/install/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2024/12/12 v3.2 Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip74
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2024/12/12 v3.2 microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3053.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+
+
+! LaTeX Error: Option clash for package abntex2cite.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \usepackage
+                {pgfgantt}  % gera gantt em latex
+The package abntex2cite has already been loaded with options:
+  [alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-etal-list=0]
+There has now been an attempt to load it with options
+  [num,overcite]
+Adding the global options:
+  alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-etal-list=0,num,overc
+ite
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/home/alan/.miktex/texmfs/install/tex/latex/pgfgantt/pgfgantt.sty
+Package: pgfgantt 2024/06/19 v5.0a Draw Gantt diagrams with TikZ
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows.c
+ode.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen311
+))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box80
+\pgf@layerboxsaved@background=\box81
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibrarypatterns
+.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrarys
+hapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfcalendar.sty
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfcalendar.code.t
+ex
+File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfcalendarcurrentjulian=\count362
+\pgf@cal@easter@Y=\count363
+\pgf@cal@easter@G=\count364
+\pgf@cal@easter@C=\count365
+\pgf@cal@easter@X=\count366
+\pgf@cal@easter@Z=\count367
+\pgf@cal@easter@D=\count368
+\pgf@cal@easter@E=\count369
+\pgf@cal@easter@N=\count370
+\pgf@cal@easter@M=\count371
+\pgf@cal@easter@julianday=\count372
+))
+\gtt@currentline=\count373
+\gtt@lasttitleline=\count374
+\gtt@currgrid=\count375
+\gtt@chartwidth=\count376
+\gtt@lasttitleslot=\count377
+\gtt@elementid=\count378
+\gtt@today@slot=\count379
+\gtt@startjulian=\count380
+\gtt@endjulian=\count381
+\gtt@chartid=\count382
+\gtt@vrule@slot=\count383
+\gtt@calendar@slots=\count384
+\gtt@calendar@weeknumber=\count385
+\gtt@calendar@startofweek=\count386
+\gtt@left@slot=\count387
+\gtt@right@slot=\count388
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+
+(/home/alan/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks61
+\verbatim@line=\toks62
+\verbatim@in@stream=\read4
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/home/alan/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box82
+\tcb@upperbox=\box83
+\tcb@lowerbox=\box84
+\tcb@phantombox=\box85
+\c@tcbbreakpart=\count389
+\c@tcblayer=\count390
+\c@tcolorbox@number=\count391
+\l__tcobox_tmpa_box=\box86
+\l__tcobox_tmpa_dim=\dimen312
+\tcb@temp=\box87
+\tcb@temp=\box88
+\tcb@temp=\box89
+\tcb@temp=\box90
+
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
+\c@tcbrastercolumn=\count392
+\c@tcbrasterrow=\count393
+\c@tcbrasternum=\count394
+\c@tcbraster=\count395
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+(/home/alan/.miktex/texmfs/install/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/home/alan/.miktex/texmfs/install/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tikzfill/tikzlibraryfill.image.cod
+e.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box91
+))
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
+)) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(/home/alan/.miktex/texmfs/install/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box92
+\tcb@totalupperbox=\box93
+\tcb@totallowerbox=\box94
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
+\tcbfitdim=\dimen313
+\tcb@lowerfitdim=\dimen314
+\tcb@upperfitdim=\dimen315
+\tcb@cur@hbadness=\count396
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
+(/home/alan/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count397
+\lst@gtempboxa=\box95
+\lst@token=\toks63
+\lst@length=\count398
+\lst@currlwidth=\dimen316
+\lst@column=\count399
+\lst@pos=\count400
+\lst@lostspace=\dimen317
+\lst@width=\dimen318
+\lst@newlines=\count401
+\lst@lineno=\count402
+\lst@maxwidth=\dimen319
+
+(/home/alan/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count403
+\lst@skipnumbers=\count404
+\lst@framebox=\box96
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
+)
+\c@tcblisting=\count405
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.4.1'
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.4.1'
+) (/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries
+/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/home/alan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfadings.
+code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/home/alan/.miktex/texmfs/install/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
+)) (/home/alan/.miktex/texmfs/install/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \citen on input line 81.
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/mdwtools/mdwtab.sty
+Package: mdwtab 1998/04/28 1.9 Table typesetting with style
+\tab@state=\count406
+\tab@columns=\count407
+\tab@preamble=\toks64
+\tab@shortline=\toks65
+\extrarowheight=\dimen320
+\tabextrasep=\dimen321
+\arrayextrasep=\dimen322
+\smarraycolsep=\dimen323
+\smarrayextrasep=\dimen324
+\tab@width=\dimen325
+\col@sep=\dimen326
+\tab@endheight=\dimen327
+\tab@leftskip=\skip75
+\tab@rightskip=\skip76
+\fn@notes=\box97
+\fn@width=\dimen328
+)
+(/home/alan/.miktex/texmfs/install/tex/latex/lwarp/lwarp-physunits.sty
+! Undefined control sequence.
+l.19 \LWR@ProvidesPackagePass
+                             {physunits}[2020/03/26]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \LWR@ProvidesPackagePass{p
+                               hysunits}[2020/03/26]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment warpMathJax undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \begin{warpMathJax}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.21 \LWR@infoprocessingmathjax
+                               {physunits}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 \CustomizeMathJax
+                      {\newcommand{\micro}{\mu}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 \CustomizeMathJax
+                      {\newcommand{\V}[1][ ]{\,\mathrm{#1V}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 \CustomizeMathJax
+                      {\newcommand{\Volt}[1][ ]{\,\mathrm{#1V}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 \CustomizeMathJax
+                      {\newcommand{\Coulomb}[1][ ]{\,\mathrm{#1C}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 \CustomizeMathJax
+                      {\newcommand{\esu}{\,\mathrm{esu}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.28 \CustomizeMathJax
+                      {\newcommand{\Ohm}[1][ ]{\,\mathrm{#1\Omega}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.29 \CustomizeMathJax
+                      {\newcommand{\Amp}[1][ ]{\,\mathrm{#1A}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \CustomizeMathJax
+                      {\newcommand{\Farad}[1][ ]{\,\mathrm{#1F}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 \CustomizeMathJax
+                      {\newcommand{\Tesla}[1][ ]{\,\mathrm{#1T}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 \CustomizeMathJax
+                      {\newcommand{\Gauss}[1][ ]{\,\mathrm{#1G}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33 \CustomizeMathJax
+                      {\newcommand{\Henry}[1][ ]{\,\mathrm{#1H}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 \CustomizeMathJax
+                      {\newcommand{\eV}[1][ ]{\,\mathrm{#1eV}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 \CustomizeMathJax
+                      {\newcommand{\keV}{\,\mathrm{keV}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 \CustomizeMathJax
+                      {\newcommand{\MeV}{\,\mathrm{MeV}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 \CustomizeMathJax
+                      {\newcommand{\J}[1][ ]{\,\mathrm{#1J}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 \CustomizeMathJax
+                      {\newcommand{\Joule}[1][ ]{\,\mathrm{#1J}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 \CustomizeMathJax
+                      {\newcommand{\erg}{\,\mathrm{erg}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 \CustomizeMathJax
+                      {\newcommand{\kcal}{\,\mathrm{kcal}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 \CustomizeMathJax
+                      {\newcommand{\Cal}{\,\mathrm{Cal}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 \CustomizeMathJax
+                      {\newcommand{\calorie}[1][ ]{\,\mathrm{#1cal}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 \CustomizeMathJax
+                      {\newcommand{\BTU}{\,\mathrm{BTU}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.44 \CustomizeMathJax
+                      {\newcommand{\tnt}{\,\mathrm{ton\, of\, TNT}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 \CustomizeMathJax
+                      {\newcommand{\Watt}[1][ ]{\,\mathrm{#1W}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 \CustomizeMathJax
+                      {\newcommand{\hpi}{\,\mathrm{hp(I)}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.47 \CustomizeMathJax
+                      {\newcommand{\hpm}{\,\mathrm{hp(M)}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.48 \CustomizeMathJax
+                      {\newcommand{\hp}{\,\mathrm{hp}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 \CustomizeMathJax
+                      {\newcommand{\meter}[1][ ]{\,\mathrm{#1m}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 \CustomizeMathJax
+                      {\newcommand{\m}[1][ ]{\,\mathrm{#1m}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 \CustomizeMathJax
+                      {\newcommand{\km}{\,\mathrm{km}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 \CustomizeMathJax
+                      {\newcommand{\au}{\,\mathrm{au}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 \CustomizeMathJax
+                      {\newcommand{\pc}[1][ ]{\,\mathrm{#1pc}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 \CustomizeMathJax
+                      {\newcommand{\ly}[1][ ]{\,\mathrm{#1ly}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55 \CustomizeMathJax
+                      {\newcommand{\cm}{\,\mathrm{cm}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 \CustomizeMathJax
+                      {\newcommand{\nm}{\,\mathrm{nm}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 \CustomizeMathJax
+                      {\newcommand{\ft}{\,\mathrm{ft}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58 \CustomizeMathJax
+                      {\newcommand{\inch}{\,\mathrm{in}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59 \CustomizeMathJax
+                      {\newcommand{\mi}{\,\mathrm{mi}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60 \CustomizeMathJax
+                      {\newcommand{\s}[1][ ]{\,\mathrm{#1s}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.61 \CustomizeMathJax
+                      {\newcommand{\Sec}[1][ ]{\,\mathrm{#1s}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 \CustomizeMathJax
+                      {\newcommand{\Min}{\,\mathrm{min}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.63 \CustomizeMathJax
+                      {\newcommand{\h}{\,\mathrm{h}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.64 \CustomizeMathJax
+                      {\newcommand{\y}[1][ ]{\,\mathrm{#1y}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 \CustomizeMathJax
+                      {\newcommand{\Day}{\,\mathrm{d}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.67 \CustomizeMathJax
+                      {\newcommand{\gm}[1][ ]{\,\mathrm{#1g}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.68 \CustomizeMathJax
+                      {\newcommand{\kg}{\,\mathrm{kg}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 \CustomizeMathJax
+                      {\newcommand{\lb}{\,\mathrm{lb}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.70 \CustomizeMathJax
+                      {\newcommand{\amu}{\,\mathrm{amu}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.71 \CustomizeMathJax
+                      {\newcommand{\N}[1][ ]{\,\mathrm{#1N}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 \CustomizeMathJax
+                      {\newcommand{\Newton}[1][ ]{\,\mathrm{#1N}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.73 \CustomizeMathJax
+                      {\newcommand{\dyne}[1][ ]{\,\mathrm{#1dyn}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.74 \CustomizeMathJax
+                      {\newcommand{\lbf}{\,\mathrm{lbf}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 \CustomizeMathJax
+                      {\newcommand{\kmps}{\,\mathrm{km}\,\mathrm{s}^{-1}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76 \CustomizeMathJax
+                      {\newcommand{\kmph}{\,\mathrm{km}\,\mathrm{h}^{-1}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 \CustomizeMathJax
+                      {\newcommand{\mps}[1][ ]{\,\mathrm{#1m}\,\mathrm{s}^{-...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78 \CustomizeMathJax
+                      {\newcommand{\miph}{\,\mathrm{mi}\,\mathrm{h}^{-1}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79 \CustomizeMathJax
+                      {\newcommand{\kts}{\,\mathrm{kts}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 \CustomizeMathJax
+                      {\newcommand{\mpss}[1][ ]{\,\mathrm{#1m}\,\mathrm{s}^{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82 \CustomizeMathJax
+                      {\newcommand{\gacc}{\,\mathrm{g}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83 \CustomizeMathJax
+                      {\newcommand{\ftpss}{\,\mathrm{ft}\,\mathrm{s}^{-2}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.84 \CustomizeMathJax
+                      {\newcommand{\K}[1][ ]{\,\mathrm{#1K}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.85 \CustomizeMathJax
+                      {\newcommand{\Kelvin}[1][ ]{\,\mathrm{#1K}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.86 \CustomizeMathJax
+                      {\newcommand{\Celcius}{\,^\circ{\mathrm{C}}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.87 \CustomizeMathJax
+                      {\newcommand{\Rankine}{\,^\circ{\mathrm{R}}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.88 \CustomizeMathJax
+                      {\newcommand{\Fahrenheit}{\,^\circ{\mathrm{F}}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 \CustomizeMathJax
+                      {\newcommand{\rpm}{\,\mathrm{rev}\,\Min^{-1}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.92 \CustomizeMathJax
+                      {\newcommand{\Hz}[1][ ]{\,\mathrm{#1Hz}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.93 \CustomizeMathJax
+                      {\newcommand{\barP}[1][ ]{\,\mathrm{#1bar}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.94 \CustomizeMathJax
+                      {\newcommand{\atm}{\,\mathrm{atm}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.95 \CustomizeMathJax
+                      {\newcommand{\Pa}[1][ ]{\,\mathrm{#1Pa}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.96 \CustomizeMathJax
+                      {\newcommand{\mmHg}{\,\mathrm{mmHg}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.97 \CustomizeMathJax
+                      {\newcommand{\inHg}{\,\mathrm{inHg}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.98 \CustomizeMathJax
+                      {\newcommand{\lbsi}{\,\mathrm{psi}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.99 \CustomizeMathJax
+                      {\newcommand{\lbsf}{\,\mathrm{psf}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.100 \CustomizeMathJax
+                       {\newcommand{\Ba}[1][ ]{\,\mathrm{#1Ba}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.101 \CustomizeMathJax
+                       {\newcommand{\Torr}[1][ ]{\,\mathrm{#1Torr}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.102 \CustomizeMathJax
+                       {\newcommand{\mol}{\,\mathrm{mol}}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{warpMathJax}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{warpMathJax}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/home/alan/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 102.
+
+Package hyperref Info: Link coloring ON on input line 102.
+(main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 102.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 102.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 102.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 102.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 102.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 102.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 102.
+LaTeX Font Info:    Redeclaring math accent \check on input line 102.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 102.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 102.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 102.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 102.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 102.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 102.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 102.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 102.
+LaTeX Info: Redefining \microtypecontext on input line 102.
+Package microtype Info: Applying patch `item' on input line 102.
+Package microtype Info: Applying patch `toc' on input line 102.
+Package microtype Info: Applying patch `eqnum' on input line 102.
+Package microtype Info: Applying patch `footnote' on input line 102.
+Package microtype Info: Applying patch `verbatim' on input line 102.
+LaTeX Info: Redefining \microtypesetup on input line 102.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\c@lstlisting=\count408
+
+! LaTeX Error: File `pages/default/0_capa.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.103     \input{pages/default/0_capa}
+                                      ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 47832 strings out of 410617
+ 1129062 string characters out of 5778008
+ 1732342 words of memory out of 5000000
+ 70100 multiletter control sequences out of 15000+600000
+ 560957 words of font info for 41 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 93i,2n,107p,1011b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

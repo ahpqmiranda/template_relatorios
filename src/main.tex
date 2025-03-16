@@ -1,0 +1,109 @@
+%! Author = alan
+%! Date = 15/03/2025
+
+% Preamble
+\documentclass[a4paper, 11pt]{article}
+\usepackage[left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry} %pacote que define as margens
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} % define a fonte ARIAL como padrão do texto
+\usepackage{graphicx} %pacote que permite a inserção de imagens
+\usepackage{setspace} %pacote que permite especificar o espaçamento entre linhas no documento
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm} %pacote que faz indentação na primeira linha do parágrafo
+\usepackage{float} %Pacote que permite tabelas flutuarem em qualquer posição
+\usepackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-etal-list=0]{abntex2cite} %define os parâmetros necessários para as referências e citações de acordo com a ABNT
+\usepackage{amsthm} % Pacote que permite a utilização de teoremas
+\usepackage{polyglossia}
+\usepackage{amsfonts} % Pacote que permite a utilização de símbolos matemáticos
+\usepackage{caption} % Pacote que permite a inserção de legendas em figuras
+\usepackage{subcaption} % Pacote que permite que imagens possam ser inseridas em composições de imagens lado a lado com o \subfigure
+\usepackage{amssymb} %4 Pacotes responsáveis pela formatação matemática
+\usepackage{rotating} %permite que textos, figuras e tabelas possam ser rotacionados
+\usepackage{array}    % permite e vetorização de tabelas
+\usepackage{longtable} % permite a elaboração de tabelas complexas
+\usepackage{colortbl} % permite a utilização de paletas de cores
+\usepackage{tikz} % criação de objetos vetoriais
+\usetikzlibrary{shapes, arrows.meta, positioning} % permite a utilização de formas e setas
+\usepackage{mathtools} % permite a utilização de equações matemáticas
+\usepackage{pdflscape} % permite alterar o estilo da pagina entre portrato e paisagem
+\usepackage{sectsty} % permite a alteração do estilo das seções
+\usepackage{url} % permite a utilização de links
+\usepackage{pgfplots} % permite a criação de gráficos
+\usepackage[table,xcdraw]{xcolor} % permite a utilização de cores
+\usepackage[brazilian,hyperpageref]{backref}    % Paginas com as citações na bibl
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{microtype} % para melhorias de justificação
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % alterado para black, antes darkblue por bug
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={mybib},
+    pdfpagemode=FullScreen
+}
+\usepackage{pgfgantt}  % gera gantt em latex
+%\usepackage[acronym]{glossaries} % cria glossário de siglas
+
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage{mdwtab}
+\usepackage{natbib}
+\pagestyle{myheadings} %pacote que define o cabeçalho com o número de página no canto superior direito
+\usepackage[utf8]{inputenc} %pacote que permite a utilização de acentos
+%\usepackage[brazil]{babel} %pacote que define o idioma
+\setmainlanguage{brazil}
+
+\sectionfont{\fontsize{12}{12}\selectfont}
+\subsectionfont{\fontsize{12}{12}\selectfont}
+\subsubsectionfont{\fontsize{12}{12}\selectfont}
+\lstset{
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1
+        {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+        {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+        {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\citeoption{abnt-etal-cite=0, abnt-and-type=&}
+
+
+\begin{document}
+    \input{pages/default/0_capa}
+    \input{pages/1_introducao}
+    \bibliographystyle{abntex2-alf}
+    \newpage
+    \bibliography{main}
+\end{document}
