@@ -1,3 +1,0 @@
-\xpg@aux {}{latex}
-\xpg@aux {}{latex}
-\contentsline {section}{\numberline {1}Introdução}{5}{section.1}%
