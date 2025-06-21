@@ -1,0 +1,210 @@
+%! Package = LATEX_UFPA
+%! Author = alan
+%! Date = 20/06/2025
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{Latex_UFPA }[2025/06/20 Pacote de padronização para projeto técnico]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -------------------- PACOTES DE FORMATAÇÃO BÁSICA ---------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define as margens da página
+\RequirePackage[left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+
+% Usa a fonte Helvética (parecida com Arial) e define como padrão
+\RequirePackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+% Permite inserir imagens
+\RequirePackage{graphicx}
+
+% Permite configurar espaçamento entre linhas
+\RequirePackage{setspace}
+
+% Indenta o primeiro parágrafo de cada seção
+\RequirePackage{indentfirst}
+
+% Permite controlar a posição de elementos flutuantes (ex: figuras)
+\RequirePackage{float}
+
+% Citações e referências de acordo com a ABNT
+\RequirePackage[alf,abnt-repeated-title-omit=yes,abnt-emphasize=bf,abnt-etal-list=0]{abntex2cite}
+
+% Pacotes matemáticos: teoremas, símbolos e ferramentas avançadas
+\RequirePackage{amsthm, amsfonts, amssymb, mathtools}
+
+% Suporte a múltiplos idiomas (usado aqui para definir "brazil" como idioma principal)
+\RequirePackage{polyglossia}
+\setmainlanguage{brazil}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -------------------- PACOTES DE FIGURAS E TABELAS ---------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Legendas para figuras e subfiguras
+\RequirePackage{caption, subcaption}
+
+% Permite rotacionar elementos
+\RequirePackage{rotating}
+
+% Melhora a manipulação de tabelas
+\RequirePackage{array, longtable, colortbl}
+
+% Permite criar gráficos e diagramas vetoriais
+\RequirePackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning}
+
+% Permite colocar páginas em formato paisagem
+\RequirePackage{pdflscape}
+
+% Permite customizar a fonte das seções
+\RequirePackage{sectsty}
+
+% Permite inserção de URLs no documento
+\RequirePackage{url}
+
+% Criação de gráficos com coordenadas (eixos, funções etc.)
+\RequirePackage{pgfplots}
+
+% Suporte a cores em tabelas e texto
+\RequirePackage[table,xcdraw]{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---------------------- NAVEGAÇÃO E REFERÊNCIAS ------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cria links de volta nas referências bibliográficas
+\RequirePackage[brazilian,hyperpageref]{backref}
+
+% Gera links clicáveis no documento (índice, refs, urls)
+\RequirePackage{hyperref}
+
+% Listas customizadas
+\RequirePackage{enumitem}
+
+% Ajusta e otimiza a justificação do texto
+\RequirePackage{microtype}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------------- PACOTES ESPECÍFICOS -------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Criação de cronogramas tipo Gantt
+\RequirePackage{pgfgantt}
+
+% Caixas coloridas e destacadas (ex: avisos, destaques)
+\RequirePackage[most]{tcolorbox}
+
+% Inserção e estilização de códigos fonte
+\RequirePackage{listings}
+
+% Estilo de citações
+\RequirePackage{cite}
+
+% Complementos para tabelas
+\RequirePackage{mdwtab}
+
+% Estilo alternativo de bibliografia (complementa abntex2)
+\RequirePackage{natbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---------------------- ESTILO DAS SEÇÕES ------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define o tamanho da fonte dos títulos
+\sectionfont{\fontsize{12}{12}\selectfont}
+\subsectionfont{\fontsize{12}{12}\selectfont}
+\subsubsectionfont{\fontsize{12}{12}\selectfont}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---------------------- HIPERLINKS E METADADOS -------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+    colorlinks=true,       % links coloridos em vez de caixas
+    linkcolor=black,       % cor dos links internos
+    filecolor=magenta,     % cor de links para arquivos
+    urlcolor=blue,         % cor de links externos (URLs)
+    citecolor=black,       % cor das citações
+    pdftitle={mybib},      % título do PDF
+    pdfpagemode=FullScreen % PDF abre em tela cheia
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------ CONFIGURAÇÕES DE CÓDIGO (LISTINGS) -----------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cores personalizadas para código
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Estilo customizado para blocos de código
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Aplica o estilo acima e define suporte a acentuação e caracteres especiais no código
+\lstset{
+    style=mystyle,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+             {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+             {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+             {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+             {ã}{{\~a}}1 {õ}{{\~o}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1
+             {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+             {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+             {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---------------------- CONFIGURAÇÕES GERAIS ---------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Indentação padrão dos parágrafos
+\setlength{\parindent}{1cm}
+
+% Cabeçalho com número da página no topo à direita
+\pagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ------------------- COMANDOS PERSONALIZADOS DO PROJETO ----------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define os valores (usados no preâmbulo)
+\newcommand{\autor}[1]{\def\@autor{#1}}
+\newcommand{\professor}[1]{\def\@professor{#1}}
+\newcommand{\disciplina}[1]{\def\@disciplina{#1}}
+\newcommand{\dataentrega}[1]{\def\@dataentrega{#1}}
+\newcommand{\titulo}[1]{\def\@titulo{#1}}
+\newcommand{\curso}[1]{\def\@curso{#1}}
+
+% Usa os valores definidos
+\newcommand{\mostrarAutor}{\@autor}
+\newcommand{\mostrarProfessor}{\@professor}
+\newcommand{\mostrarDisciplina}{\@disciplina}
+\newcommand{\mostrarData}{\@dataentrega}
+\newcommand{\mostrarTitulo}{\@titulo}
+\newcommand{\mostrarCurso}{\@curso}
+
+
+\endinput
