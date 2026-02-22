@@ -1,0 +1,67 @@
+
+\documentclass[oneside]{PPGEI-tex}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+%\title{Título do TCC}
+%\author{Nome do Autor}
+%\date{Cidade -- Ano}
+
+\begin{document}
+
+
+% Informações obrigatórias
+\universidade{Universidade Federal do Pará}
+\setor{Instituto de Tecnologia}
+\programa{Faculdade de Engenharia Mecânica}
+\curso{Engenharia Mecânica}
+\title{Sistemas Térmicos I\\Lista de Exercícios 02}
+\author{Alan Henrique Pereira Miranda - 202102140072 \\
+ENZO MARTINS GOES - 202102140032 \\
+DERIK HIROYUKI OIKAVA - 202002140068 \\
+MAURICIO GONCALVES TRINDADE - 201702140103
+}
+\orientador{Prof. Dr. Hendrick Maxil Zarate Rocha}
+\coorientador{} % para o raríssimo caso que precisar
+\local{Belém -- PA}
+\date{2025}
+\brasao{figuras/logosUFPA/Brasao-UFPA-colorido.png}
+\titulo{Sistemas Térmicos I}
+\areaconcentracao{Sistemas de Combustão Interna} % deixar vazio para o campo nao aparecer
+
+% Elementos pré-textuais
+\criarcapa
+\criarcontracapa
+%\criarfichacatalografica
+%\criarpaginaassinatura
+%\frontmatter
+
+% descomentar os itens a seguir quando escrever tccs, teses e artigos
+%\input{pretextuais/resumo}
+%\input{pretextuais/abstract}
+%\input{pretextuais/agradecimentos}
+%\input{pretextuais/dedicatoria}
+%\input{pretextuais/lista_abreviaturas}
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+% para o caso de tccs, teses e artigos, usar a estrutura a seguir
+\input{capitulos/cap1_introducao}
+\input{capitulos/cap2_revisao}
+\input{capitulos/cap3_metodologia}
+\input{capitulos/cap4_resultados}
+\input{capitulos/cap5_conclusao}
+% no caso de listas...
+\input{questoes/q01_section}
+
+%\bibliographystyle{abnt}
+\bibliography{referencias}
+
+%\appendix
+%\input{anexos/anexoA}
+
+\end{document}
