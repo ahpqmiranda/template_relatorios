@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{PPGEI-tex}[2021/10/03 Classe criada para o modelo de tese no PPGEI]
+% \ProvidesClass{PPGEI-tex}[2021/10/03 Classe criada para o modelo de tese no PPGEI]
 
 \newcommand{\headlinecolor}{\normalcolor}
 \LoadClass[12pt,a4paper]{report}
@@ -35,6 +35,8 @@
 \RequirePackage{enumitem}                     %PERMITE MELHORAR A LISTAS ENUMERADAS E COM MARCADORES
 \RequirePackage[section]{placeins}
 \RequirePackage[subsection]{placeins}
+\RequirePackage{listings}                      %PERMITE INCLUIR CÓDIGOS-FONTE NO DOCUMENTO
+\RequirePackage[alf]{abntex2cite}               % referências abnt
 %\RequirePackage[subsubsection]{placeins}
 %\RequirePackage[subsubsection]{placeins}
 \RequirePackage{lipsum}
@@ -47,9 +49,9 @@
 
 %CONFIGURAR O AMBIENTE QUOTE
 \renewenvironment{quote}
-  {\small\list{}{ \leftmargin=4cm \rightmargin=0cm \itshape \singlespacing}%
-  \item\relax}
-  {\endlist}
+{\small\list{}{ \leftmargin=4cm \rightmargin=0cm \itshape \singlespacing}%
+\item\relax}
+{\endlist}
 
 %CONFIGURA UMA LINHA BONITINHA NOS CAPÍTULOS
 \newcommand{\hsp}{\hspace{20pt}}
@@ -60,14 +62,14 @@
 \onehalfspacing
 
 %CONFIGURA O SUMÁRIO USANDO O titletoc
-\titlecontents{section}  
+\titlecontents{section}
 [.5em] %
 {\smallskip}
 {\thecontentslabel\enspace}%\thecontentslabel
 {\hspace*{7.12em}}
 {\titlerule*[.75pc]{.}\contentspage}
 
-\titlecontents{subsection}  
+\titlecontents{subsection}
 [2.0em] %
 {\smallskip}
 {\textbf\thecontentslabel\enspace\textbf}%\thecontentslabel
@@ -99,11 +101,10 @@
 \makenomenclature
 \renewcommand{\nomname}{\hfill Lista de Abreviaturas e Símbolos\hfill}
 \renewcommand\nomgroup[1]{%
-  \item[\bfseries
-  \ifstrequal{#1}{C}{Símbolos}{%
-  \ifstrequal{#1}{S}{Siglas}{}}%
-]}
-
+    \item[\bfseries
+    \ifstrequal{#1}{C}{Símbolos}{%
+        \ifstrequal{#1}{S}{Siglas}{}}%
+    ]}
 
 
 %CONFIGURA O PACOTE chngcntr
@@ -119,7 +120,6 @@
 \setlength{\headheight}{15.1pt}
 \lhead{\leftmark}
 \rhead{Página \thepage}
-
 
 
 %RENOMEIA O table of contens
@@ -167,169 +167,193 @@
 
 %CRIA A CAPA
 \newcommand{\criarcapa}{%
-  \newpage
-  \setcounter{page}{0}
-  \thispagestyle{empty}
-  \begin{center}%
-    
-      \lineskip .5em%
-      	\begin{figure}[h]
-    		\centering
-    		\includegraphics[width=0.2\linewidth]{\getbrasao}
-		\end{figure}
-      	\textbf{\MakeUppercase{\getuniversidade}}
-      	
-      	\textbf{\MakeUppercase{\getsetor}}
-      	
-      	\textbf{\MakeUppercase{\getprograma}}
-      	
-      	\vspace{2cm}
-      	
-        \textbf{\MakeUppercase{\@author}}
-        
-        \vspace{5cm}
-        {\textbf{\MakeUppercase{\@title}}}
+    \newpage
+    \setcounter{page}{0}
+    \thispagestyle{empty}
+    \begin{center}%
+
+    \lineskip .5em%
+    \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.2\linewidth]{\getbrasao}
+    \end{figure}
+    \textbf{\MakeUppercase{\getuniversidade}}
+
+    \textbf{\MakeUppercase{\getsetor}}
+
+    \textbf{\MakeUppercase{\getprograma}}
+
+    \vspace{2cm}
+
+    \textbf{\MakeUppercase{\@author}}
+
+    \vspace{5cm}
+    {\textbf{\MakeUppercase{\@title}}}
     \vfill%    
     {
-	\textbf{\getlocal}
-	    
-    \textbf{\the\year}}%
-  \end{center}%
-  \par
-  \vskip 1.5em}
+        \textbf{\getlocal}
+
+        \textbf{\the\year}}%
+    \end{center}%
+    \par
+    \vskip 1.5em}
 
 
 %CRIA A CONTRA-CAPA
 \newcommand{\criarcontracapa}{%
-  \newpage
-  \thispagestyle{empty}
-  \begin{center}%
-    
-      \lineskip .5em%
-      	\textbf{\MakeUppercase{\getuniversidade}}
-      	
-      	\textbf{\MakeUppercase{\getsetor}}
-      	
-      	\textbf{\MakeUppercase{\getprograma}}
-      	
-      	\vspace{2cm}
-      	
-      	{\textbf{\MakeUppercase{\@title}}}
-        
-        \vspace{2cm}
-        
-        \textbf{\MakeUppercase{\@author}}
+    \newpage
+    \thispagestyle{empty}
+    \begin{center}%
 
-        \vspace{0.5cm}
+    \lineskip .5em%
+    \textbf{\MakeUppercase{\getuniversidade}}
 
-        \begin{flushright}
-\noindent\mbox{%
-    \parbox{.48\textwidth}{%
-     Atividade submetida à avaliação disciplinar do professor \xcapitalisewords{\getorientador} do Corpo Docente da \xcapitalisewords{\getuniversidade} como requisito para obtenção de aprovação disciplinar em \xcapitalisewords{\gettitulo} do bacharelado em \xcapitalisewords{\getcurso}.\\
-    
-    Área de concentração: \getareaconcentracao
+    \textbf{\MakeUppercase{\getsetor}}
 
-    Orientador: \xcapitalisewords{\getorientador}\\
+    \textbf{\MakeUppercase{\getprograma}}
 
-    Belém-PA: \today
+    \vspace{2cm}
 
-    %Co-orientador: \xcapitalisewords{\getcoorientador}
-    }%
-}
-\end{flushright}
-        
+    {\textbf{\MakeUppercase{\@title}}}
+
+    \vspace{2cm}
+
+    \textbf{\MakeUppercase{\@author}}
+
+    \vspace{0.5cm}
+
+    \begin{flushright}
+    \noindent\mbox{%
+        \parbox{.48\textwidth}{%
+            Atividade submetida à avaliação disciplinar do professor \xcapitalisewords{\getorientador} do Corpo Docente da \xcapitalisewords{\getuniversidade} como requisito para obtenção de aprovação disciplinar em \xcapitalisewords{\gettitulo} do bacharelado em \xcapitalisewords{\getcurso}.\\
+
+            Área de concentração: \getareaconcentracao
+
+            Orientador: \xcapitalisewords{\getorientador}\\
+
+            Belém-PA: \today
+
+        %Co-orientador: \xcapitalisewords{\getcoorientador}
+        }%
+    }
+    \end{flushright}
+
     \vfill%    
     {
-	\textbf{\getlocal}
-	    
-    \textbf{\the\year}}%
-  \end{center}%
-  \par
-  \vskip 1.5em}
+        \textbf{\getlocal}
+
+        \textbf{\the\year}}%
+    \end{center}%
+    \par
+    \vskip 1.5em}
 
 %CRIA A FICHA CATALOGRÁFICA
 \newcommand{\criarfichacatalografica}{
-  \newpage
-  \thispagestyle{empty}
-  \mbox
+    \newpage
+    \thispagestyle{empty}
+    \mbox
 
-\vfill
-\begin{center}
-\textbf{FICHA CATALOGRÁFICA}
-\vspace{.5cm}
-\end{center}
+    \vfill
+    \begin{center}
+    \textbf{FICHA CATALOGRÁFICA}
+    \vspace{.5cm}
+    \end{center}
 
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-	\begin{large}
-	\getfichacatalografica
-	\end{large}
-    }%
+    \noindent\fbox{%
+        \parbox{\textwidth}{%
+            \begin{large}
+            \getfichacatalografica
+            \end{large}
+        }%
+    }
 }
-}
- 
+
 %CRIA A PÁGINA DE ASSINATURAS
 \newcommand{\criarpaginaassinatura}{
-  \newpage
-  \thispagestyle{empty}
-  \begin{center}
-  \textbf{\MakeUppercase{\@author}}
+    \newpage
+    \thispagestyle{empty}
+    \begin{center}
+    \textbf{\MakeUppercase{\@author}}
 
-\vspace{2cm}
+    \vspace{2cm}
 
-{\Large\textbf{\MakeUppercase{\@title}}}
+    {\Large\textbf{\MakeUppercase{\@title}}}
 
-\vspace{2cm}
+    \vspace{2cm}
 
-\begin{flushright}
-{\setstretch{2.0}\noindent\mbox{%
-    \parbox{.6\textwidth}{%
-     Atividade submetida à avaliação disciplinar do professor \xcapitalisewords{\getorientador} do Corpo Docente da \xcapitalisewords{\getuniversidade} como requisito para obtenção de aprovação disciplinar em \xcapitalisewords{\gettitulo} do bacharelado em \xcapitalisewords{\getcurso}.\\
-
-     
-    \vspace{1.5cm}
-    
-    \getlocal, \rule{1.5cm}{0.4pt}  de \rule{3cm}{0.4pt}  de \the\year.
-    }%
-}
-}
-\end{flushright}
+    \begin{flushright}
+    {\setstretch{2.0}\noindent\mbox{%
+        \parbox{.6\textwidth}{%
+            Atividade submetida à avaliação disciplinar do professor \xcapitalisewords{\getorientador} do Corpo Docente da \xcapitalisewords{\getuniversidade} como requisito para obtenção de aprovação disciplinar em \xcapitalisewords{\gettitulo} do bacharelado em \xcapitalisewords{\getcurso}.\\
 
 
-\vspace{\fill}
+            \vspace{1.5cm}
 
-\noindent\rule{.7\textwidth}{0.4pt}
+            \getlocal, \rule{1.5cm}{0.4pt}  de \rule{3cm}{0.4pt}  de \the\year.
+        }%
+    }
+    }
+    \end{flushright}
 
-\getorientador
-\end{center}
+
+    \vspace{\fill}
+
+    \noindent\rule{.7\textwidth}{0.4pt}
+
+    \getorientador
+    \end{center}
 }
 
 
 \newcommand{\criarepigrafe}[2]{
-\newpage
-\thispagestyle{empty}
-\null
-\vfill
-
-\begin{flushright}
-{\setstretch{1.5}\noindent\mbox{%
-    \parbox{.8\textwidth}{%
-    \begin{flushleft}
-        \textit{#1}
-    \end{flushleft}
+    \newpage
+    \thispagestyle{empty}
+    \null
+    \vfill
 
     \begin{flushright}
-        (#2)
+    {\setstretch{1.5}\noindent\mbox{%
+        \parbox{.8\textwidth}{%
+            \begin{flushleft}
+            \textit{#1}
+            \end{flushleft}
+
+            \begin{flushright}
+            (#2)
+            \end{flushright}
+
+        }%
+    }
+    }
     \end{flushright}
 
-    }%
+    \onehalfspacing
 }
-}
-\end{flushright}
 
-\onehalfspacing
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
 }
-  
-  
-  
+
+\lstset{style=mystyle}
   

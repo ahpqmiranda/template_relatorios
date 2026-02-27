@@ -1,4 +1,3 @@
-
 \documentclass[oneside]{PPGEI-tex}
 
 \usepackage[utf8]{inputenc}
@@ -10,58 +9,55 @@
 %\date{Cidade -- Ano}
 
 \begin{document}
-
-
 % Informações obrigatórias
-\universidade{Universidade Federal do Pará}
-\setor{Instituto de Tecnologia}
-\programa{Faculdade de Engenharia Mecânica}
-\curso{Engenharia Mecânica}
-\title{Sistemas Térmicos I\\Lista de Exercícios 02}
-\author{Alan Henrique Pereira Miranda - 202102140072 \\
-ENZO MARTINS GOES - 202102140032 \\
-DERIK HIROYUKI OIKAVA - 202002140068 \\
-MAURICIO GONCALVES TRINDADE - 201702140103
-}
-\orientador{Prof. Dr. Hendrick Maxil Zarate Rocha}
-\coorientador{} % para o raríssimo caso que precisar
-\local{Belém -- PA}
-\date{2025}
-\brasao{figuras/logosUFPA/Brasao-UFPA-colorido.png}
-\titulo{Sistemas Térmicos I}
-\areaconcentracao{Sistemas de Combustão Interna} % deixar vazio para o campo nao aparecer
+    \universidade{Universidade Federal do Pará}
+    \setor{Instituto de Tecnologia}
+    \programa{Faculdade de Engenharia Mecânica}
+    \curso{Engenharia Mecânica}
+    \title{Análise de Máquinas de Fluxo -- Relatório de Cálculo e Modelagem}
+    \author{Alan Henrique Pereira Miranda - 202102140072\\Luis Gabriel Brito Mota - 202102140019\\Jesiele Lemos da Silva - 202102140080\\José Américo Ribeiro Neto - 202002140011\\Marcos Silvio Borges Inete - 202002140005}
+    \orientador{Prof. Dr. Claudio Fialho}
+    \coorientador{} % para o raríssimo caso que precisar
+    \local{Belém -- PA}
+    \date{2025}
+    \brasao{figuras/logosUFPA/Brasao-UFPA-colorido.png}
+    \titulo{Turbomáquinas Hidráulicas}
+    \areaconcentracao{} % deixar vazio para o campo nao aparecer
 
 % Elementos pré-textuais
-\criarcapa
-\criarcontracapa
+    \criarcapa
+    \criarcontracapa
 %\criarfichacatalografica
-%\criarpaginaassinatura
-%\frontmatter
+% \criarpaginaassinatura
+    \frontmatter
 
 % descomentar os itens a seguir quando escrever tccs, teses e artigos
 %\input{pretextuais/resumo}
 %\input{pretextuais/abstract}
 %\input{pretextuais/agradecimentos}
 %\input{pretextuais/dedicatoria}
-%\input{pretextuais/lista_abreviaturas}
+% \input{pretextuais/lista_abreviaturas}
 
-\tableofcontents
-%\listoffigures
-%\listoftables
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \mainmatter
 
-% para o caso de tccs, teses e artigos, usar a estrutura a seguir
-\input{capitulos/cap1_introducao}
-\input{capitulos/cap2_revisao}
-\input{capitulos/cap3_metodologia}
-\input{capitulos/cap4_resultados}
-\input{capitulos/cap5_conclusao}
-% no caso de listas...
-\input{questoes/q01_section}
+    % Arquivos de capítulos corrigidos para bater com o Sumário
+    \input{capitulos/cap1_introducao}
+    \input{capitulos/cap2_revisao}
+    \input{capitulos/cap3_metodologia}
+    \input{capitulos/cap4_resultados}
+    \input{capitulos/cap5_conclusao}
 
-%\bibliographystyle{abnt}
-\bibliography{referencias}
+    \backmatter
 
-%\appendix
-%\input{anexos/anexoA}
+    % As referências entram aqui (Antes dos Apêndices, conforme ABNT)
+    \bibliographystyle{abntex2-alf}
+    \bibliography{referencias}
+
+    \appendix
+    \input{anexos/anexoA}
+    \input{anexos/anexoB}
 
 \end{document}

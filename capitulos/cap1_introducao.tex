@@ -1,3 +1,41 @@
 \chapter{Introdução}
+\label{ch:introducao}
+    As bombas de fluxo axial constituem uma categoria especializada de turbomáquinas hidráulicas nas quais o movimento do fluido ocorre paralelamente ao eixo de rotação da bomba. Seu princípio de funcionamento baseia-se em um rotor dotado de pás com formato semelhante a hélices de propulsão naval, geralmente contando com 2 a 8 pás que impulsionam o fluido ao longo do eixo. Ao contrário das bombas centrífugas radiais, as bombas axiais mantêm o fluxo na direção axial tanto na entrada quanto na saída.
 
-Introdutório do TCC.
+    A característica distintiva das bombas axiais reside em sua velocidade específica elevada, conceito fundamental para classificação de turbomáquinas. A velocidade específica é um parâmetro adimensional calculado pela expressão:
+    \[
+    n_s = \frac{n \sqrt{Q}}{H^{0.75}}
+    \]
+    onde $n$ é a rotação (rpm), $Q$ é a vazão (m$^3$/s) e $H$ a altura manométrica (m). Para bombas radiais, $n_s$ tipicamente entre 10--70; diagonais entre 70--120; axiais, acima de 120.
+
+    As aplicações industriais das bombas axiais concentram-se em sistemas de alta vazão e baixa altura manométrica, como circulação de evaporadores na indústria química, drenagem na mineração, setor papel/celulose e sistemas de irrigação.
+
+Em síntese, as bombas de fluxo axial representam uma solução eficiente para o transporte de grandes volumes de fluido com baixa elevação, destacando-se por sua alta velocidade específica e design especializado.
+Este projeto apresenta o dimensionamento completo de uma bomba de fluxo axial para aplicação em sistema de circulação forçada em evaporador de múltiplo efeito, demonstrando a aplicação integrada de conceitos de mecânica dos fluidos, transferência de energia e engenharia de processos químicos. O trabalho utiliza como referência as especificações técnicas da bomba Lewis VL Axial Flow, da fabricante Weir, reconhecida mundialmente por soluções de bombeamento em processos industriais.
+
+O desenvolvimento do projeto abrange os parâmetros operacionais, seleção de materiais, cálculos hidráulicos e mecânicos, além da avaliação de desempenho e eficiência energética. Através deste estudo, busca-se não apenas o dimensionamento adequado da bomba, mas também a otimização de seu funcionamento dentro do sistema de evaporadores, garantindo confiabilidade e sustentabilidade operacional.
+
+
+\chapter{Objetivos}
+\label{ch:objetivos}
+
+Este capítulo delineia as metas centrais e as etapas metodológicas fundamentais deste trabalho, estabelecendo as diretrizes para o dimensionamento técnico e a análise operacional da turbomáquina dentro do cenário de estudo proposto.
+
+\section{Objetivo Geral}
+\label{sec:obj_geral}
+
+O objetivo principal deste projeto é realizar o dimensionamento termofluidodinâmico, a seleção de materiais e a modelagem cinemática de uma bomba de fluxo axial (modelo Lewis\textsuperscript{\textregistered} VL750) projetada para operar em um sistema de circulação forçada de um evaporador de múltiplo efeito, garantindo a eficiência energética e a confiabilidade operacional frente às severas condições de salinidade, vazão e temperatura do processo.
+
+\section{Objetivos Específicos}
+\label{sec:obj_esp}
+
+Para o cumprimento do objetivo geral, as seguintes metas específicas foram estabelecidas e executadas ao longo do estudo:
+
+\begin{itemize}
+    \item Dimensionar as grandezas hidráulicas do sistema, incluindo diâmetros de tubulação, fator de atrito e perdas de carga localizadas e distribuídas para o transporte de $8.000~m^3/h$ de solução aquosa salina;
+    \item Avaliar a termodinâmica da sucção, calculando o \textit{Net Positive Suction Head} disponível ($NPSH_d$) e propondo soluções de layout de planta (elevação de cota estática) para mitigar o risco de cavitação induzido pela alta pressão de vapor do fluido a $80^\circ C$;
+    \item Realizar a análise técnico-econômica para a seleção de materiais de construção do impelidor e da carcaça, visando o melhor custo-benefício contra corrosão localizada (\textit{pitting}) e em fresta induzida por cloretos;
+    \item Calcular a potência de eixo requerida e especificar um motor elétrico comercial compatível com os fatores de segurança normativos;
+    \item Desenvolver uma ferramenta computacional em Python baseada no Teorema de Euler para Turbomáquinas, gerando os triângulos de velocidades nas seções de entrada e saída do rotor;
+    \item Estabelecer e plotar as curvas de desempenho da bomba parametrizadas pelas Leis de Afinidade para máquinas de fluxo, prevendo seu comportamento em rotações de $600~rpm$ a $975~rpm$.
+\end{itemize}
