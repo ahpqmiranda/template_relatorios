@@ -1,3 +1,20 @@
-\chapter{Resultados}
+\chapter{Resultados e Discussões}
+\label{ch:resultados}
+O dimensionamento integrado da bomba axial Lewis VL750 para o sistema de circulação forçada do evaporador demonstrou a viabilidade técnica e econômica do projeto, atendendo rigorosamente aos parâmetros operacionais de 8.000 m³/h de vazão e 10,11 m de altura manométrica. A análise dos resultados pode ser dividida em três pilares fundamentais: segurança termodinâmica, desempenho cinemático e otimização de custos.
 
-Apresentação e discussão dos resultados.
+\section{Segurança Termodinâmica e Mecânica}
+\label{sec:seguranca}
+O maior desafio inicial do projeto consistia em bombear uma solução salina a 80°C, condição que eleva substancialmente a pressão de vapor do fluido e o risco de cavitação. A intervenção no layout da planta, elevando o vaso evaporador em 7 m, provou-se uma decisão de engenharia essencial. Com essa alteração geométrica, obteve-se um $NPSH_d$ de 12,3 m, superando com uma margem segura o $NPSH_r$ de 10,3 m exigido pela bomba.
+
+No aspecto mecânico, a potência hidráulica de aproximadamente 224,8 kW exigiu um equipamento robusto. A seleção do motor WEG W22 IR3 Premium de 400 cv garantiu um fator de segurança normativo de cerca de 14,4\%, assegurando que flutuações na densidade da salmoura ou picos térmicos não causem sobrecarga no acionamento.
+
+\section{Desempenho Cinemático e Modelagem Operacional}
+\label{sec:desempenho}
+A rotina computacional desenvolvida em Python permitiu a visualização clara da transferência de energia baseada no Teorema de Euler. Os triângulos de velocidades evidenciaram que o rotor consegue induzir a componente tangencial absoluta necessária ($C_{u5} = 2,54$ m/s) para vencer as perdas de carga térmicas e de atrito do sistema.
+
+Além disso, a extrapolação do comportamento da máquina através das Leis de Afinidade revelou limites operacionais críticos. Conforme demonstrado pelas curvas de desempenho geradas (Anexo B), a redução da rotação por meio de inversores de frequência (VFDs) impacta a carga de forma quadrática. Uma operação a 600 RPM, por exemplo, entregaria menos de 4 m de altura manométrica, sendo incapaz de vencer o desnível estático do evaporador. Isso define a rotação nominal de 975 RPM como o ponto ótimo de operação para a demanda máxima.
+
+\section{Otimização de Custos e Estratégias de Engenharia}
+\label{sec:otimizacao}
+
+A agressividade química da solução salina exigia o uso do aço inoxidável Duplex 2205. No entanto, a fabricação de uma carcaça maciça de 930 mm neste material tornaria o CAPEX proibitivo. A decisão de especificar uma carcaça base em ferro fundido nodular com um revestimento interno de 5 mm de Duplex 2205 (via deposição/fixação catódica) reduziu o custo estimado da peça de \(R\$ 950.000,00\) para cerca de \(R\$ 340.000,00\). Essa estratégia de mitigação de custos, manteve a integridade contra corrosão severa ao mesmo tempo em que viabilizou economicamente o projeto.

@@ -1,29 +1,7 @@
-\appendix
-\chapter{Código Computacional}
-\label{anexo:codigo_python}
-
-O código a seguir apresenta a implementação completa do script em Python, orientado a objetos, utilizado para o cálculo das expressões intermediárias das grandezas cinemáticas e para a geração dos triângulos de velocidades apresentados na metodologia do trabalho.
-
-% Configuração para aceitar acentos em português dentro do código Python
-\lstset{literate=
-  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-  {ã}{{\~a}}1 {ẽ}{{\~e}}1 {ĩ}{{\~i}}1 {õ}{{\~o}}1 {ũ}{{\~u}}1
-  {Ã}{{\~A}}1 {Ẽ}{{\~E}}1 {Ĩ}{{\~I}}1 {Õ}{{\~O}}1 {Ũ}{{\~U}}1
-  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-}
-
-\begin{lstlisting}[language=Python, caption={Script de simulação cinemática da Lewis VL750}]
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 class TurbomachineAnalyzer:
     """
@@ -114,7 +92,7 @@ class TurbomachineAnalyzer:
         self.rm = (self.R + self.r) / 2.0
         self.dm = 2.0 * self.rm
         self.U = np.pi * self.dm * self.N / 60.0
-        self.A = (np.pi / 4.0) * (self.D**2 - self.d**2)
+        self.A = (np.pi / 4.0) * (self.D ** 2 - self.d ** 2)
         self.Cm = self.Q / self.A
 
     def _compute_section4(self):
@@ -150,12 +128,12 @@ class TurbomachineAnalyzer:
         else:
             self.Cu4 = self.Cm4 / np.tan(np.radians(self.alpha_4))
 
-        self.C4 = np.sqrt(self.Cm4**2 + self.Cu4**2)
+        self.C4 = np.sqrt(self.Cm4 ** 2 + self.Cu4 ** 2)
 
         # Geometria do triângulo (W fecha C com U)
         self.Wu4 = self.U - self.Cu4
         self.Wm4 = self.Cm4
-        self.W4 = np.sqrt(self.Wu4**2 + self.Wm4**2)
+        self.W4 = np.sqrt(self.Wu4 ** 2 + self.Wm4 ** 2)
 
         self.beta_4_calc = np.degrees(np.arctan2(self.Wm4, self.Wu4))
 
@@ -192,9 +170,9 @@ class TurbomachineAnalyzer:
 
         # A bomba dá o "empurrão" na água (transferência de momento):
         self.Cu5 = self.U - self.Wu5
-        self.C5 = np.sqrt(self.Cm5**2 + self.Cu5**2)
+        self.C5 = np.sqrt(self.Cm5 ** 2 + self.Cu5 ** 2)
 
-        self.W5 = np.sqrt(self.Wu5**2 + self.Wm5**2)
+        self.W5 = np.sqrt(self.Wu5 ** 2 + self.Wm5 ** 2)
         self.alpha_5_calc = np.degrees(np.arctan2(self.Cm5, self.Cu5))
 
     def get_geometry(self):
@@ -334,13 +312,15 @@ class TurbomachineAnalyzer:
         ax.plot(0, 0, 'ko', markersize=5)
 
         ax.arrow(0, 0, self.U, 0, head_width=0.2, head_length=0.3, fc='red', ec='red', width=0.05)
-        ax.text(self.U/2, 0.5, f'U = {self.U:.2f} m/s', color='red', ha='center', va='bottom')
+        ax.text(self.U / 2, 0.5, f'U = {self.U:.2f} m/s', color='red', ha='center', va='bottom')
 
         ax.arrow(0, 0, self.Cu4, -self.Cm4, head_width=0.2, head_length=0.3, fc='blue', ec='blue', width=0.05)
-        ax.text(self.Cu4/2 - 1, -self.Cm4/2, f'C4 = {self.C4:.2f} m/s', color='blue', ha='right', va='center')
+        ax.text(self.Cu4 / 2 - 1, -self.Cm4 / 2, f'C4 = {self.C4:.2f} m/s', color='blue', ha='right', va='center')
 
-        ax.arrow(self.U, 0, self.Cu4 - self.U, -self.Cm4, head_width=0.2, head_length=0.3, fc='green', ec='green', width=0.05)
-        ax.text(self.U - self.Wu4/2 + 1, -self.Wm4/2, f'W4 = {self.W4:.2f} m/s\nβ4 = {self.beta_4_calc:.1f}°', color='green', ha='left', va='center')
+        ax.arrow(self.U, 0, self.Cu4 - self.U, -self.Cm4, head_width=0.2, head_length=0.3, fc='green', ec='green',
+                 width=0.05)
+        ax.text(self.U - self.Wu4 / 2 + 1, -self.Wm4 / 2, f'W4 = {self.W4:.2f} m/s\nβ4 = {self.beta_4_calc:.1f}°',
+                color='green', ha='left', va='center')
 
         ax.set_xlim(-5, self.U + 5)
         ax.set_ylim(-self.Cm4 - 2, 2)
@@ -355,13 +335,16 @@ class TurbomachineAnalyzer:
         ax.plot(0, 0, 'ko', markersize=5)
 
         ax.arrow(0, 0, self.U, 0, head_width=0.2, head_length=0.3, fc='red', ec='red', width=0.05)
-        ax.text(self.U/2, 0.5, f'U = {self.U:.2f} m/s', color='red', ha='center', va='bottom')
+        ax.text(self.U / 2, 0.5, f'U = {self.U:.2f} m/s', color='red', ha='center', va='bottom')
 
         ax.arrow(0, 0, self.Cu5, -self.Cm5, head_width=0.2, head_length=0.3, fc='blue', ec='blue', width=0.05)
-        ax.text(self.Cu5/2 - 1, -self.Cm5/2, f'C5 = {self.C5:.2f} m/s\nα5 = {self.alpha_5_calc:.1f}°', color='blue', ha='right', va='center')
+        ax.text(self.Cu5 / 2 - 1, -self.Cm5 / 2, f'C5 = {self.C5:.2f} m/s\nα5 = {self.alpha_5_calc:.1f}°', color='blue',
+                ha='right', va='center')
 
-        ax.arrow(self.U, 0, self.Cu5 - self.U, -self.Cm5, head_width=0.2, head_length=0.3, fc='green', ec='green', width=0.05)
-        ax.text(self.U - self.Wu5/2 + 1, -self.Wm5/2, f'W5 = {self.W5:.2f} m/s\nβ5 = {self.beta_5:.1f}°', color='green', ha='left', va='center')
+        ax.arrow(self.U, 0, self.Cu5 - self.U, -self.Cm5, head_width=0.2, head_length=0.3, fc='green', ec='green',
+                 width=0.05)
+        ax.text(self.U - self.Wu5 / 2 + 1, -self.Wm5 / 2, f'W5 = {self.W5:.2f} m/s\nβ5 = {self.beta_5:.1f}°',
+                color='green', ha='left', va='center')
 
         ax.set_xlim(-5, self.U + 5)
         ax.set_ylim(-self.Cm5 - 2, 2)
@@ -370,4 +353,3 @@ class TurbomachineAnalyzer:
         if show:
             plt.savefig('../out/triangulos_performance.png', dpi=300)
             plt.show()
-\end{lstlisting}
