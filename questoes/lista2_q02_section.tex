@@ -1,0 +1,67 @@
+\newpage
+\section*{Questão 2 — Análise Politrópica e Consumo Específico}
+\label{sec:q_2}
+\vspace{{10pt}}
+\begin{{minipage}}{{\textwidth}}
+\small
+\paragraph{{Enunciado:}}
+\begin{{verbatim}}
+Um motor a gasolina é alimentado com um combustível cujo poder calorífico é de 42.000 kJ/kg. 
+As pressões no interior do cilindro, quando o pistão está a 5\% e a 75\% do curso de compressão, 
+são de 1,2 bar e 4,8 bar, respectivamente.
+
+Admitindo que o processo de compressão obedece à lei politrópica: $PV^{1,3} = constante$ 
+e desprezando os efeitos de biela-manivela considerando $V$ variando linearmente com o curso, determine:
+\begin{enumerate}[label=\alph*)]
+\item A razão de compressão do motor;
+\item Se a relação da eficiência indicada real do motor com a eficiência do ciclo ar-padrão ($\eta_i/\eta_{ciclo}$), 
+é de 60\%, calcule o consumo específico indicado de combustível em g/kWh.
+\end{enumerate}
+
+\end{{verbatim}}
+\end{{minipage}}
+\vspace{{15pt}}
+\subsection*{Solução}
+\noindent\textbf{Dados:}\\[5pt]
+\begin{center}
+\begin{tabular}{|c|r|c|} \hline
+\textbf{Parâmetro} & \textbf{Valor} & \textbf{Unidade} \\ \hline\hline
+$PCI$ & 42000 & kJ/kg \\ \hline
+$P_a$ & 1.2 & bar \\ \hline
+$P_b$ & 4.8 & bar \\ \hline
+$y_a$ & 0.05 & -- \\ \hline
+$y_b$ & 0.75 & -- \\ \hline
+$n_{poly}$ & 1.3 & -- \\ \hline
+$\eta_{rel}$ & 0.60 & -- \\ \hline
+$k$ & 1.4 & -- \\ \hline
+\end{tabular}
+\end{center}\\[10pt]
+
+\paragraph{Resolução:}
+
+\subsubsection*{Razão de Volumes Intermediários ($R_v$)}
+\noindent A partir da lei politrópica da compressão $P_A V_A^n = P_B V_B^n$ [cite: 13], determinamos a razão volumétrica exata entre as posições de 5\% e 75\% do curso do pistão[cite: 12].
+\[ R_{v} = \left(\frac{P_{b}}{P_{a}}\right)^{\frac{1}{n_{poly}}} \approx 2.90 \]
+\vspace{6pt}
+
+\subsubsection*{Razão de compressão do motor ($r$)}
+\noindent A posição do pistão $y$ relaciona-se com o volume através da função linear $V(y) = V_c + (1-y)V_d$[cite: 13]. Substituindo os volumes $V_a$ e $V_b$ na razão $R_v$ e sabendo que $r = 1 + V_d/V_c$, isolamos a razão de compressão global do motor.
+\[ r = \frac{R_{v} - 1}{1 - y_a - R_{v} \left(1 - y_{b}\right)} + 1 \approx 9.51 \]
+\vspace{6pt}
+
+\subsubsection*{Eficiência do ciclo ar-padrão (Otto)}
+\noindent Como se trata de um motor a gasolina , a eficiência teórica é modelada pelo ciclo Otto ideal (ar-padrão)[cite: 14], que depende exclusivamente da razão de compressão calculada no passo anterior.
+\[ \eta_{ciclo} = 1 - r^{1 - k} \approx 0.5938 \text{ ou } 59.38\% \]
+\vspace{6pt}
+
+\subsubsection*{Eficiência indicada real ($\eta_i$)}
+\noindent A eficiência indicada real representa a fração efetiva da energia do combustível convertida em trabalho sobre o pistão. O problema fornece que essa eficiência corresponde a 60\% da eficiência ideal[cite: 14].
+\[ \eta_{i} = \eta_{ciclo} \cdot \eta_{rel} \approx 0.3563 \text{ ou } 35.63\% \]
+\vspace{6pt}
+
+\subsubsection*{Consumo Específico Indicado ($CEI$)}
+\noindent O consumo específico quantifica a massa de combustível necessária para gerar 1 kWh de energia indicada[cite: 14]. Para realizar a conversão dimensional correta (de kJ para kWh e de kg para gramas), aplicamos o fator de conversão de $3.6 \times 10^6$.
+\[ CEI = \frac{3.6 \times 10^6}{PCI \cdot \eta_{i}} \approx 240.56 \text{ g/kWh} \]
+\vspace{6pt}
+
+\newpage

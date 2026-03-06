@@ -1,0 +1,109 @@
+\newpage
+
+
+\section*{Questão 1 — Ciclo Otto Ideal}
+\label{sec:q_1}
+\vspace{{10pt}}
+\begin{{minipage}}{{\textwidth}}
+\small
+\paragraph{{Enunciado:}}
+\begin{{verbatim}}
+Um motor a gás monocilíndrico de dois tempos é modelado usando o ciclo Otto, apresenta
+diâmetro do cilindro de 200 mm e curso do pistão de 250 mm. O volume morto é de 1570 cm$^3$.
+No início do processo de compressão, o fluido de trabalho encontra-se a uma pressão de 1 bar e
+temperatura de 27$^\circ$C. A temperatura máxima atingida ao longo do ciclo é de 1400$^\circ$C.
+
+Com base nessas informações, determine:
+\begin{enumerate}[label=\alph*)]
+\item A pressão e a temperatura nos principais estados termodinâmicos do ciclo;
+\item A eficiência térmica do ciclo;
+\item O trabalho específico produzido por ciclo;
+\item A pressão média efetiva;
+\item A potência indicada fornecida pelo motor, sabendo que ele realiza 500 ciclos por minuto.
+\end{enumerate}
+
+\end{{verbatim}}
+\end{{minipage}}
+\vspace{{15pt}}
+\subsection*{Solução}
+\noindent\textbf{Dados:}\\[5pt]
+\begin{center}
+\begin{tabular}{|c|r|c|} \hline
+\textbf{Parâmetro} & \textbf{Valor} & \textbf{Unidade} \\ \hline\hline
+$d$ & 0.20 & m \\ \hline
+$c$ & 0.25 & m \\ \hline
+$V_c$ & 0.00157 & m$^3$ \\ \hline
+$N$ & 500 & min$^{-1}$ \\ \hline
+$P_1$ & 100000 & Pa \\ \hline
+$T_1$ & 300.15 & K \\ \hline
+$T_3$ & 1673.15 & K \\ \hline
+$c_v$ & 717 & J/(kg$\cdot$K) \\ \hline
+$c_p$ & 1004 & J/(kg$\cdot$K) \\ \hline
+$k$ & 1.4 & -- \\ \hline
+$R$ & 288.2 & J/(kg$\cdot$K) \\ \hline
+\end{tabular}
+\end{center}\\[10pt]
+
+\paragraph{Resolução:}
+
+\subsubsection*{Volume Deslocado}
+\noindent Cálculo do volume cilíndrico varrido pelo pistão durante um curso completo (do Ponto Morto Superior ao Ponto Morto Inferior).
+\[ V_d = \frac{\pi c d^{2}}{4} \approx 0.00785 \text{ m}^3 \]
+\vspace{6pt}
+
+\subsubsection*{Razão de Compressão}
+\noindent Relação geométrica volumétrica entre o volume máximo no cilindro ($V_d + V_c$) e o volume de folga ($V_c$).
+\[ r = \frac{V_c + V_d}{V_c} \approx 6.00 \]
+\vspace{6pt}
+
+\subsubsection*{Temperatura no Estado 2}
+\noindent Modelando a compressão (1-2) como um processo isentrópico (adiabático e reversível), a temperatura aumenta em função da razão de compressão.
+\[ T_{2} = T_{1} \cdot r^{k - 1} \approx 614.71 \text{ K} \]
+\vspace{6pt}
+
+\subsubsection*{Pressão no Estado 2}
+\noindent Semelhante à temperatura, a pressão no final da fase de compressão isentrópica é ditada pela relação dos volumes e a constante adiabática do gás.
+\[ P_{2} = P_{1} \cdot r^{k} \approx 1229330.60 \text{ Pa} \approx 12.29 \text{ bar} \]
+\vspace{6pt}
+
+\subsubsection*{Pressão no Estado 3}
+\noindent No ciclo Otto, a adição de calor (combustão) é modelada a volume constante (isocórica). Com o volume fixo, a pressão sobe proporcionalmente à temperatura máxima do ciclo ($T_3$).
+\[ P_{3} = P_{2} \left(\frac{T_{3}}{T_{2}}\right) \approx 3346041.40 \text{ Pa} \approx 33.46 \text{ bar} \]
+\vspace{6pt}
+
+\subsubsection*{Temperatura no Estado 4}
+\noindent A expansão (tempo motor, processo 3-4) é modelada como isentrópica. O gás expande da razão de volume mínima para a máxima.
+\[ T_{4} = T_{3} \left(\frac{1}{r}\right)^{k - 1} \approx 816.96 \text{ K} \]
+\vspace{6pt}
+
+\subsubsection*{Pressão no Estado 4}
+\noindent Pressão final após a expansão isentrópica e antes da abertura da válvula de exaustão.
+\[ P_{4} = P_{3} \left(\frac{1}{r}\right)^{k} \approx 272184.02 \text{ Pa} \approx 2.72 \text{ bar} \]
+\vspace{6pt}
+
+\subsubsection*{Eficiência Térmica}
+\noindent O rendimento do ciclo Otto ideal sob ar-padrão depende unicamente da razão de compressão do motor e das propriedades do fluido ($k$).
+\[ \eta_{th} = 1 - r^{1 - k} \approx 0.5117 \text{ ou } 51.17\% \]
+\vspace{6pt}
+
+\subsubsection*{Calor Adicionado}
+\noindent Quantidade de energia térmica inserida no sistema por unidade de massa durante a combustão isocórica.
+\[ q_{in} = c_v (T_{3} - T_{2}) \approx 758899.47 \text{ J/kg} \approx 758.90 \text{ kJ/kg} \]
+\vspace{6pt}
+
+\subsubsection*{Trabalho Específico Líquido}
+\noindent O trabalho útil extraído por kg de ar no cilindro corresponde ao calor inserido multiplicado pela eficiência global do ciclo ideal.
+\[ w_{net} = \eta_{th} \cdot q_{in} \approx 388346.47 \text{ J/kg} \approx 388.35 \text{ kJ/kg} \]
+\vspace{6pt}
+
+\subsubsection*{Pressão Média Efetiva (PME)}
+\noindent Parâmetro global de desempenho que indica a pressão teórica constante que realizaria o mesmo trabalho se atuasse durante o curso de expansão.
+\[ pme = \frac{W_{ciclo}}{V_d} \approx 538680.91 \text{ Pa} \approx 5.39 \text{ bar} \]
+\vspace{6pt}
+
+\subsubsection*{Potência Indicada}
+\noindent Potência total extraída da câmara de combustão. Como é um motor de 2 tempos, há a realização de 1 ciclo termodinâmico a cada volta ($N$) do virabrequim.
+\[ \dot{W}_{i} = \frac{N \cdot V_d \cdot pme}{60} \approx 35256.58 \text{ W} \approx 35.26 \text{ kW} \]
+\vspace{6pt}
+
+\newpage

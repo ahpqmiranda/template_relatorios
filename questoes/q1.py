@@ -1,254 +1,163 @@
 from core import *
 from typing import List
 import sympy as sp
-import subprocess
 import os
+import subprocess
 
-# Caminho absoluto para o diretório raiz do projeto (dois níveis acima de q2.py)
-home = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+# =============================================================================
+# DEFINIÇÃO DOS DADOS DA QUESTÃO 1
+# =============================================================================
+raw_data_lista2_q01 = {
+    # Dados do motor
+    "d": 0.200,  # Diâmetro (m)
+    "c": 0.250,  # Curso (m)
+    "Vc": 0.001570,  # Volume morto (m³)
+    "N": 500,  # Ciclos por minuto (rpm)
 
-# Caminho para o arquivo tcc.tex
-entrada = os.path.join(home, 'tcc.tex')
+    # Estados Iniciais e Máximos
+    "P1": 100000,  # Pressão no início da compressão (Pa) -> 1 bar
+    "T1": 300.15,  # Temperatura no início (K) -> 27 °C
+    "T3": 1673.15,  # Temperatura máxima do ciclo (K) -> 1400 °C
 
-# Caminho para o diretório de saída (ex: ./out)
-saida = os.path.join(home, 'out')
-
-os.makedirs(saida, exist_ok=True)
-
-# Comando de compilação
-comando = [
-    'xelatex',
-    '-interaction=nonstopmode',
-    f'-output-directory={saida}',
-    entrada
-]
+    # Propriedades do ar como gás ideal (dados no fim da lista)
+    "cv": 717,  # J/kg-K
+    "cp": 1004,  # J/kg-K
+    "k": 1.4,  # Razão de calores específicos
+    "R": 288.2  # Constante do gás (Ru/MW = 8314.5 / 28.85) em J/kg-K
+}
 
 
-def solve_q01(data: ResolvedData, beta: int) -> List[Step]:
+# =============================================================================
+# FUNÇÃO DE RESOLUÇÃO (ETAPAS)
+# =============================================================================
+def solve_lista2_q01(data: ResolvedData, beta: int) -> List[Step]:
     steps: List[Step] = []
 
-    # Pb, N, eta_th_f, eta_m, PCI = sp.symbols('Pb N eta_th_f eta_m PCI', positive=True, real=True)
-    # d, c, rho_ar, mdot_f, V_ar = sp.symbols('mdot_f V_ar d c rho_ar', positive=True, real=True)
-    # AF, Up, eta_v, eta_th_i, V_d, pme = sp.symbols('AF Up eta_v eta_th_i V_d pme', positive=True, real=True)
+    # --- Símbolos ---
+    d, c, Vc, N = sp.symbols('d c Vc N', positive=True, real=True)
+    P1, T1, T3 = sp.symbols('P1 T1 T3', positive=True, real=True)
+    k, cv, cp, R = sp.symbols('k cv cp R', positive=True, real=True)
 
-    # Simbólicos básicos
-    Pb, N, PCI = sp.symbols('Pb N PCI', positive=True, real=True)
+    Vd, r = sp.symbols('Vd r', positive=True, real=True)
+    T2, P2, P3, T4, P4 = sp.symbols('T2 P2 P3 T4 P4', positive=True, real=True)
+    eta_th, w_in, w_out, w_net, q_in = sp.symbols('eta_th w_in w_out w_net q_in', positive=True, real=True)
+    pme, Wdot_i = sp.symbols('pme Wdot_i', positive=True, real=True)
 
-    # Eficiências
-    eta_th_f, eta_m, eta_th_i, eta_v = sp.symbols('eta_th_f eta_m eta_th_i eta_v', positive=True, real=True)
+    # --- Passo 1: Volume Deslocado e Razão de Compressão ---
+    Vd_eq = sp.Eq(Vd, sp.pi * d ** 2 / 4 * c)
+    Vd_val = float(Vd_eq.rhs.subs({d: data["d"], c: data["c"]}).evalf())
+    add_step(steps, "Volume Deslocado", "Cálculo do volume varrido pelo pistão em 1 cilindro.", Vd_eq, Vd_val)
 
-    # Dimensões e propriedades físicas
-    d, c, rho_ar = sp.symbols('d c rho_ar', positive=True, real=True)
+    r_eq = sp.Eq(r, (Vd + Vc) / Vc)
+    r_val = float(r_eq.rhs.subs({Vd: Vd_val, Vc: data["Vc"]}).evalf())
+    add_step(steps, "Razão de Compressão", "Relação entre o volume máximo (Vd + Vc) e o volume mínimo (Vc).", r_eq,
+             r_val)
 
-    # Resultados de interesse
-    mdot_f, V_ar, V_d, pme, Up = sp.symbols('mdot_f V_ar V_d pme Up', positive=True, real=True)
+    # --- Passo 2: Estado 2 (Fim da Compressão Isentrópica) ---
+    T2_eq = sp.Eq(T2, T1 * r ** (k - 1))
+    T2_val = float(T2_eq.rhs.subs({T1: data["T1"], r: r_val, k: data["k"]}).evalf())
+    add_step(steps, "Temperatura no Estado 2", "Processo isentrópico (1-2): $T_2 = T_1 \cdot r^{k-1}$.", T2_eq, T2_val)
 
-    # Razão ar/comb
-    AF = sp.Symbol('AF', positive=True, real=True)
+    P2_eq = sp.Eq(P2, P1 * r ** k)
+    P2_val = float(P2_eq.rhs.subs({P1: data["P1"], r: r_val, k: data["k"]}).evalf())
+    add_step(steps, "Pressão no Estado 2", "Processo isentrópico (1-2): $P_2 = P_1 \cdot r^k$.", P2_eq, P2_val)
 
-    # ETAPA 1: Consumo combustível kg/h
-    mdot_f_eq = sp.Eq(mdot_f, (Pb / (eta_th_f * PCI)) * 3600)
-    mdot_f_value = float(mdot_f_eq.rhs.subs({Pb: data["Pb"], eta_th_f: data["eta_th_f"], PCI: data["PCI"]}).evalf())
-    add_step(steps,
-             "Consumo de combustível (kg/h)",
-             "Fórmula padrão para motores: $\\dot{{m}}_f = \\frac{{P_e}}{\\eta_{{t,e}} \\cdot PCI} \\times 3600$. "
-             "Convertendo $P_e$ para W e isolando obtemos o consumo em kg/h.",
-             expr=mdot_f_eq,
-             value=mdot_f_value
-             )
+    # --- Passo 3: Estado 3 (Fim da Adição de Calor Isocórica) ---
+    P3_eq = sp.Eq(P3, P2 * (T3 / T2))
+    P3_val = float(P3_eq.rhs.subs({P2: P2_val, T3: data["T3"], T2: T2_val}).evalf())
+    add_step(steps, "Pressão no Estado 3", "Processo isocórico (2-3): $\\frac{P_3}{T_3} = \\frac{P_2}{T_2}$.", P3_eq,
+             P3_val)
 
-    # ETAPA 2: Vazão ar (m³/h)
-    V_ar_eq = sp.Eq(V_ar, (AF * mdot_f) / rho_ar)
-    V_ar_h_value = float(V_ar_eq.rhs.subs({
-        AF: data["AF"],
-        mdot_f: mdot_f_value,
-        rho_ar: data["rho_ar"]
-    }).evalf())
+    # --- Passo 4: Estado 4 (Fim da Expansão Isentrópica) ---
+    T4_eq = sp.Eq(T4, T3 * (1 / r) ** (k - 1))
+    T4_val = float(T4_eq.rhs.subs({T3: data["T3"], r: r_val, k: data["k"]}).evalf())
+    add_step(steps, "Temperatura no Estado 4", "Processo isentrópico (3-4): $T_4 = T_3 \cdot (1/r)^{k-1}$.", T4_eq,
+             T4_val)
 
-    add_step(steps,
-             "Vazão volumétrica de ar (m$^3$/h)",
-             "Aplicamos a fórmula $\\dot{{V}}_{{ar}} = \\frac{{AF_m \\cdot \\dot{{m}}_f}}{\\rho_{{ar}}}$. "
-             "Multiplicamos o consumo de combustível por hora pela razão ar/combustível e dividimos pela densidade do ar "
-             "para obter a vazão em m$^3$/h.",
-             expr=V_ar_eq,
-             value=V_ar_h_value
-             )
+    P4_eq = sp.Eq(P4, P3 * (1 / r) ** k)
+    P4_val = float(P4_eq.rhs.subs({P3: P3_val, r: r_val, k: data["k"]}).evalf())
+    add_step(steps, "Pressão no Estado 4", "Processo isentrópico (3-4): $P_4 = P_3 \cdot (1/r)^k$.", P4_eq, P4_val)
 
-    # ETAPA 3: Eficiência térmica indicada
-    eta_th_i_eq = sp.Eq(eta_th_i, eta_th_f / eta_m)
-    eta_th_i_value = float(eta_th_i_eq.rhs.subs({
-        eta_th_f: data["eta_th_f"],
-        eta_m: data["eta_m"]
-    }).evalf())
+    # --- Passo 5: Eficiência Térmica do Ciclo ---
+    eta_eq = sp.Eq(eta_th, 1 - 1 / (r ** (k - 1)))
+    eta_val = float(eta_eq.rhs.subs({r: r_val, k: data["k"]}).evalf())
+    add_step(steps, "Eficiência Térmica", "Eficiência do ciclo Otto ideal em função da razão de compressão.", eta_eq,
+             eta_val)
 
-    add_step(
-        steps,
-        "Eficiência térmica indicada",
-        "Aplicamos a definição $\\eta_{t,i} = \\frac{\\eta_{t,e}}{\\eta_m}$, que relaciona a eficiência térmica ao freio com a eficiência indicada, "
-        "considerando perdas mecânicas no motor.",
-        expr=eta_th_i_eq,
-        value=eta_th_i_value
-    )
+    # --- Passo 6: Trabalho Específico (J/kg) ---
+    q_in_eq = sp.Eq(q_in, cv * (T3 - T2))
+    q_in_val = float(q_in_eq.rhs.subs({cv: data["cv"], T3: data["T3"], T2: T2_val}).evalf())
+    add_step(steps, "Calor Adicionado", "Calor fornecido a volume constante: $q_{in} = c_v(T_3 - T_2)$.", q_in_eq,
+             q_in_val)
 
-    # ETAPA 4: Cilindrada unitária (1 cilindro)
-    Vd_eq = sp.Eq(V_d, sp.pi * d ** 2 / 4 * c)
-    Vd_value = float(Vd_eq.rhs.subs({
-        d: data["d"],
-        c: data["c"]
-    }).evalf())
+    w_net_eq = sp.Eq(w_net, eta_th * q_in)
+    w_net_val = float(w_net_eq.rhs.subs({eta_th: eta_val, q_in: q_in_val}).evalf())
+    add_step(steps, "Trabalho Específico Líquido",
+             "Trabalho líquido por unidade de massa: $w_{net} = \\eta_{th} \cdot q_{in}$.", w_net_eq, w_net_val)
 
-    add_step(
-        steps,
-        "Cilindrada unitária (cc) (1 cilindro)",
-        "Calculamos o volume deslocado por 1 cilindro usando a fórmula "
-        "$V_d = \\frac{\\pi \\cdot d^2}{4} \\cdot c$, onde $d$ é o diâmetro interno e $c$ o curso do pistão.",
-        expr=Vd_eq,
-        value=Vd_value
-    )
+    # --- Passo 7: Pressão Média Efetiva (Pa) ---
+    # Necessário calcular a massa de ar: m = P1*(Vd+Vc)/(R*T1)
+    m_ar_val = float((data["P1"] * (Vd_val + data["Vc"]) / (data["R"] * data["T1"])))
+    W_ciclo_total_val = w_net_val * m_ar_val  # Trabalho total em Joules
 
-    # ETAPA 5: Eficiência volumétrica
-    f_ciclo = data["N"] / 120  # Para motor 4 tempos
-    Vd_total_expr = sp.pi * d ** 2 / 4 * c * 4  # Volume total (4 cilindros)
+    pme_eq = sp.Eq(pme, w_net * (data["P1"] * (Vd + Vc) / (R * T1)) / Vd)  # Expressão para demonstrar
+    pme_val = float(W_ciclo_total_val / Vd_val)
+    add_step(steps, "Pressão Média Efetiva (PME)", "Trabalho total do ciclo dividido pelo volume deslocado.", pme_eq,
+             pme_val)
 
-    V_adm_teor = Vd_total_expr * f_ciclo
-    V_ar_ms = V_ar_h_value / 3600  # m³/s
-
-    eta_v_eq = sp.Eq(V_ar_ms, eta_v * V_adm_teor)
-    eta_v_value = float((V_ar_ms / V_adm_teor.subs({
-        d: data["d"],
-        c: data["c"],
-        N: data["N"]
-    })).evalf())
-
-    add_step(
-        steps,
-        "Eficiência volumétrica",
-        "Para motor 4 tempos, a frequência de admissão por cilindro é $f_{{ciclo}} = \\frac{{N}}{{120}}$. "
-        "Calculamos a vazão volumétrica teórica de admissão por segundo como "
-        "$\\dot{{V}}_{{adm,teor}} = V_d \\cdot f_{{ciclo}}$, considerando os 4 cilindros. "
-        "Assim, a eficiência volumétrica é definida como $\\eta_v = \\frac{{\\dot{{V}}_{{ar}}}}{{\\dot{{V}}_{{adm,teor}}}}$.",
-        expr=eta_v_eq,
-        value=eta_v_value
-    )
-
-    # ETAPA 6: Pressão média efetiva (Pa)
-
-    pme_eq = sp.Eq(pme, Pb / (Vd_total_expr * f_ciclo))
-
-    pme_value = float((data["Pb"] / (
-            (sp.pi * data["d"] ** 2 / 4 * data["c"] * 4) * f_ciclo
-    )).evalf())
-
-    add_step(
-        steps,
-        "Pressão média efetiva (Pa)",
-        "A pressão média efetiva é dada por $p_{{me}} = \\frac{{P_e}}{{V_d \\cdot f_{{ciclo}}}}$, "
-        "onde $V_d$ é o volume total deslocado e $f_{{ciclo}} = \\frac{{N}}{{120}}$ em motores 4 tempos.",
-        pme_eq,
-        pme_value
-    )
-
-    # ETAPA 7: Velocidade média do pistão (m/s)
-    Up_eq = sp.Eq(Up, 2 * c * N / 60)
-    Up_value = float(Up_eq.rhs.subs({
-        c: data["c"],
-        N: data["N"]
-    }).evalf())
-
-    add_step(
-        steps,
-        "Velocidade média do pistão (m/s)",
-        "A velocidade média do pistão é calculada por $U_p = \\frac{2 \\cdot c \\cdot N}{60}$, "
-        "considerando dois deslocamentos lineares por rotação do virabrequim.",
-        Up_eq,
-        Up_value
-    )
-
-    # ✅ AVALIAÇÃO FINAL (subs_map completo)
-    subs_map = {
-        Pb: data["Pb"], N: data["N"], eta_th_f: data["eta_th_f"],
-        eta_m: data["eta_m"], PCI: data["PCI"],
-        d: data["d"], c: data["c"], rho_ar: data["rho_ar"]
-    }
-
-    # for step in steps:
-    #     # Força limpeza de TODOS símbolos residuais
-    #     step.value = sp.simplify(step.expr.subs(subs_map).doit())
+    # --- Passo 8: Potência Indicada (W) ---
+    # Para motor 2 tempos, ocorre 1 ciclo por rotação
+    Wdot_eq = sp.Eq(Wdot_i, pme * Vd * (N / 60))
+    Wdot_val = float(Wdot_eq.rhs.subs({pme: pme_val, Vd: Vd_val, N: data["N"]}).evalf())
+    add_step(steps, "Potência Indicada",
+             "Potência gerada baseada na PME, volume deslocado e frequência (1 ciclo/volta para 2 tempos).", Wdot_eq,
+             Wdot_val)
 
     return steps
 
 
-raw_data_q01 = {
-    # β-adaptativos (por grupo)
-    "Pb": lambda beta, ctx: float(f"6{beta}000"),  # W
-    "N": lambda beta, ctx: float(f"2{beta}00"),  # rpm
-    "eta_th_f": 0.30,  # %
-    "eta_m": lambda beta, ctx: float(f"0.8{beta}"),
-    "PCI": lambda beta, ctx: float(f"4{beta}000000"),  # J/kg
-    "AF": 15,
-    "rho_ar": 1.184,  # kg/m³
-
-    "d": lambda beta, ctx: float(f"0.12{beta}"),  # m
-    "c": 0.10,  # fixo 10 cm
-}
-
-
+# =============================================================================
+# ENUNCIADO
+# =============================================================================
 def format_question_text(data: ResolvedData) -> str:
-    """Gera enunciado com dados numéricos formatados."""
-    Pb_kw = float(data["Pb"]) / 1000
-    N_rpm = int(float(data["N"]))
-    PCI_mjkg = float(data["PCI"]) / 1e6
-    d_mm = float(data["d"]) * 1000
-    c_mm = float(data["c"]) * 1000
+    return """Um motor a gás monocilíndrico de dois tempos é modelado usando o ciclo Otto, apresenta
+diâmetro do cilindro de 200 mm e curso do pistão de 250 mm. O volume morto é de 1570 cm$^3$.
+No início do processo de compressão, o fluido de trabalho encontra-se a uma pressão de 1 bar e
+temperatura de 27$^\\circ$C. A temperatura máxima atingida ao longo do ciclo é de 1400$^\\circ$C. 
 
-    return f"""Um motor de ignição por compressão de 4 tempos apresenta potência de 
-\\textbf{{{Pb_kw:.0f} kW}} a {N_rpm} rpm. A eficiência térmica ao freio é de 30\\% e 
-o poder calorífico inferior do combustível é de \\textbf{{{PCI_mjkg:.0f} MJ/kg}}. 
-O diâmetro do cilindro é \\textbf{{{d_mm:.1f} mm}} e o curso {c_mm:.0f} mm. 
-Considerando densidade do ar = \\textbf{{1.184 kg/m$^3$}}:
-
-\\begin{{enumerate}}
-\\item Determinar o consumo de combustível em kg/h;
-\\item Consumo de ar em m$^3$/h;  
-\\item Eficiência térmica indicada;
-\\item Eficiência volumétrica;
-\\item Pressão média efetiva;
-\\item Velocidade média do pistão.
-\\end{{enumerate}}"""
+Com base nessas informações, determine:
+\\begin{enumerate}[label=\\alph*)]
+\\item A pressão e a temperatura nos principais estados termodinâmicos do ciclo;
+\\item A eficiência térmica do ciclo;
+\\item O trabalho específico produzido por ciclo;
+\\item A pressão média efetiva;
+\\item A potência indicada fornecida pelo motor, sabendo que ele realiza 500 ciclos por minuto.
+\\end{enumerate}"""
 
 
+# =============================================================================
+# EXECUÇÃO
+# =============================================================================
 if __name__ == "__main__":
+    # Roda a função do framework
     data, steps, beta = solve_problem(
-        "Motor Otto 4T - Consumo específico (β-adaptativo)",
-        solve_q01, raw_data_q01, beta_value=2
+        "Questão 1 - Motor Otto 2 Tempos",
+        solve_lista2_q01,
+        raw_data_lista2_q01,
+        beta_value=1
     )
 
+    # Gera o código LaTeX formatado
     section_tex = question_to_latex_section(
         q_number=1,
-        problem_title="Motor Otto 4T",
+        problem_title="Ciclo Otto Ideal",
         given=data,
         steps=steps,
         question_text=format_question_text(data)
     )
 
-    with open("q01_section.tex", "w") as f:
+    # Salva no arquivo
+    with open("lista2_q01_section.tex", "w", encoding='utf-8') as f:
         f.write(section_tex)
 
-    print(f"✅ Q01 gerada (β={beta})")
-
-    print(f"  m_f     = {safe_float(steps[0].value)} kg/h")
-    print(f"  V_ar    = {safe_float(steps[1].value)} m³/h")
-    print(f"  η_t,i   = {safe_float(steps[2].value)} %")
-    print(f"  η_v     = {safe_float(steps[3].value)} %")
-    print(f"  p_me    = {safe_float(steps[4].value)} bar")
-    print(f"  U_p     = {safe_float(steps[5].value)} m/s")
-
-
-    processo = subprocess.run(comando, cwd=home, capture_output=True, text=True)
-
-    # Mostra a saída da compilação
-    print('Saída:')
-    print(processo.stdout)
-
-    print('\nErros:')
-    print(processo.stderr)
+    print("✅ Questão 1 gerada com sucesso em lista2_q01_section.tex")
