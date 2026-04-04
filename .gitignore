@@ -1,3 +1,5 @@
 # Project exclude paths
 /auxil/
 /out/
+.idea
+uv.lock

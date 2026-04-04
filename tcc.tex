@@ -1,63 +1,72 @@
 \documentclass[oneside]{PPGEI-tex}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}
-
-%\title{Título do TCC}
-%\author{Nome do Autor}
-%\date{Cidade -- Ano}
+\usepackage{lipsum}
 
 \begin{document}
+
 % Informações obrigatórias
     \universidade{Universidade Federal do Pará}
     \setor{Instituto de Tecnologia}
     \programa{Faculdade de Engenharia Mecânica}
     \curso{Engenharia Mecânica}
+    \areaconcentracao{Mecânica dos Sólidos} % deixar vazio para o campo nao aparecer
     \title{Análise de Máquinas de Fluxo -- Relatório de Cálculo e Modelagem}
-    \author{Alan Henrique Pereira Miranda - 202102140072\\Luis Gabriel Brito Mota - 202102140019\\Jesiele Lemos da Silva - 202102140080\\José Américo Ribeiro Neto - 202002140011\\Marcos Silvio Borges Inete - 202002140005}
+    \author{Alan Henrique Pereira Miranda - 202102140072\\
+    Luis Gabriel Brito Mota - 202102140019\\
+    Jesiele Lemos da Silva - 202102140080\\
+    José Américo Ribeiro Neto - 202002140011\\
+    Marcos Silvio Borges Inete - 202002140005}
     \orientador{Prof. Dr. Claudio Fialho}
-    \coorientador{} % para o raríssimo caso que precisar
+    \coorientador{}
     \local{Belém -- PA}
     \date{2025}
     \brasao{figuras/logosUFPA/Brasao-UFPA-colorido.png}
     \titulo{Turbomáquinas Hidráulicas}
-    \areaconcentracao{} % deixar vazio para o campo nao aparecer
 
-% Elementos pré-textuais
+% Elementos pré-textuais (páginas em romano)
+    \pagenumbering{roman}
     \criarcapa
     \criarcontracapa
-%\criarfichacatalografica
-% \criarpaginaassinatura
-    \frontmatter
+%    \criarfichacatalografica
+%    \criarpaginaassinatura
 
-% descomentar os itens a seguir quando escrever tccs, teses e artigos
-%\input{pretextuais/resumo}
-%\input{pretextuais/abstract}
-%\input{pretextuais/agradecimentos}
-%\input{pretextuais/dedicatoria}
-% \input{pretextuais/lista_abreviaturas}
+    % descomentar quando escrever tccs, teses e artigos
+%    \input{pretextuais/fichacatalografica}
+%    \newpage
+%    \input{pretextuais/resumo}
+%    \newpage
+%    \input{pretextuais/abstract}
+%    \newpage
+%    \input{pretextuais/agradecimentos}
+%    \newpage
+%    \input{pretextuais/dedicatoria}
+%    \newpage
+    \input{pretextuais/lista_abreviaturas}
+    \newpage
 
     \tableofcontents
+    \newpage
     \listoffigures
+    \newpage
     \listoftables
-    \mainmatter
+    \newpage
 
-    % Arquivos de capítulos corrigidos para bater com o Sumário
+% Elementos textuais
+    \pagenumbering{arabic}
+
     \input{capitulos/cap1_introducao}
     \input{capitulos/cap2_revisao}
     \input{capitulos/cap3_metodologia}
     \input{capitulos/cap4_resultados}
     \input{capitulos/cap5_conclusao}
 
-    \backmatter
-
-    % As referências entram aqui (Antes dos Apêndices, conforme ABNT)
-    \bibliographystyle{abntex2-alf}
+% --- Referências Bibliográficas ---
+    \newpage
+% Remova o \bibliographystyle{abntex2-alf}, pois a classe usa citações numéricas
     \bibliography{referencias}
 
+% --- Apêndices ---
+    \newpage
     \appendix
     \input{anexos/anexoA}
-    \input{anexos/anexoB}
 
 \end{document}

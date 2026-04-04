@@ -1,103 +1,84 @@
 \NeedsTeXFormat{LaTeX2e}
-% \ProvidesClass{PPGEI-tex}[2021/10/03 Classe criada para o modelo de tese no PPGEI]
+\ProvidesClass{PPGEI-tex}[2026/04/03 Classe adaptada para o modelo PPGEI baseada em Article]
 
 \newcommand{\headlinecolor}{\normalcolor}
-\LoadClass[12pt,a4paper]{report}
+% Alterado de report para article
+\LoadClass[12pt,a4paper]{article}
+
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 \RequirePackage[english,portuguese]{babel}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{xcolor}                       %PACOTE PARA ALTERAR A COR DAS LETRAS
-\RequirePackage{amsmath}                      %FACILITA A ESCRITA MATEMÁTICA
-\RequirePackage{amsfonts}                     %EXTENSÃO QUE ADICIONA LETRAS E ALGUNS SÍMBOLOS MATEMÁTICOS
-\RequirePackage{amssymb}                      %ADICIONA AINDA MAIS SÍMBOLOS MATEMÁTICOS
-\RequirePackage{makeidx}                      %CRIA ÍNDICES
-\RequirePackage{graphicx}                     %OFERECE FACILIDADES E MAIS CONFIGURAÇÕES PARA O \includegraphics{}
-\RequirePackage{setspace}                     %OFERECE SUPORTE PARA CONFIGURAR O ESPAÇAMENTO ENTRE AS LINHAS
-\RequirePackage{chngcntr}                     %MUDA COMO OS CONTADORES PODEM SER RESETADOS, PERMITINDO OUTRAS FORMAS DE MOSTRAR AS SEÇÕES E CAPÍTULOS
-\RequirePackage{mfirstuc}                     %OFERECE OS COMANDOS QUE PERMITEM A CAPITALIZAÇÃO DA PRIMEIRA LETRA DA PALAVRA
-\RequirePackage[portuguese]{nomencl}          %CRIA LISTA DE SÍMBOLOS E NOMENCLATURAS
-\RequirePackage{verbatim}                     %OFERECCE O COMANDO \begin{verbatim} QUE PERMITE QUE O CÓDIGO SEJA MOSTRADO SEM COMPILAR
-\RequirePackage{pdfpages}                     %PERMITE A INCLUSÃO DE PDFs
-\RequirePackage{caption}                      %PERMITE CONFIGURAÇÕES EXTRAS DO \caption{}
-\RequirePackage{subcaption}                   %PERMITE A ESCRITA DE SUBCAPTION EM SUBFIGURAS
-\RequirePackage{booktabs}                     %MELHORA A QUALIDADE DAS TABELAS
-\RequirePackage[nottoc, notlof, notlot]{tocbibind}            %ADICIONA A BIBLIOGRAFIA AO SUMÁRIO
-\RequirePackage{fancyhdr}                     %PERMITE UMA EDIÇÃO MAIS BONITA DO CABEÇALHO E RODAPÉ DA PÁGINA
-\RequirePackage{titletoc}                     %PERMITE A EDIÇÃO DO SUMÁRIO
-\RequirePackage{titlesec}                     %PERMITE A EDIÇÃO DO TÍTULO DOS CAPÍTULOS E SEÇÕES
-\RequirePackage{setspace}                     %PERMITE A ALTERAÇÃO DO ESPAÇAMENTO ENTRE AS LINHAS
-\RequirePackage{pdfpages}                     %PERMITE INCLUIR PDF NO DOCUMENTO
-\RequirePackage{etoolbox}                     %PERMITE INICIAR UMA FUNÇÃO NO COMEÇO DE UM AMBIENTE
+\RequirePackage{xcolor}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{makeidx}
+\RequirePackage{graphicx}
+\RequirePackage{setspace}
+\RequirePackage{mfirstuc}
+\RequirePackage[portuguese]{nomencl}
+\RequirePackage{verbatim}
+\RequirePackage{pdfpages}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{booktabs}
+\RequirePackage[nottoc, notlof, notlot]{tocbibind}
+\RequirePackage{fancyhdr}
+\RequirePackage{titletoc}
+\RequirePackage{titlesec}
+\RequirePackage{etoolbox}
 \RequirePackage{indentfirst}
-\RequirePackage{float}                        %PERMITE MELHORAR O CONTROLE DE FIGURAS E TABELAS
-\RequirePackage{enumitem}                     %PERMITE MELHORAR A LISTAS ENUMERADAS E COM MARCADORES
+\RequirePackage{float}
+\RequirePackage{enumitem}
 \RequirePackage[section]{placeins}
 \RequirePackage[subsection]{placeins}
-\RequirePackage{listings}                      %PERMITE INCLUIR CÓDIGOS-FONTE NO DOCUMENTO
-\RequirePackage[alf]{abntex2cite}               % referências abnt
-%\RequirePackage[subsubsection]{placeins}
-%\RequirePackage[subsubsection]{placeins}
-\RequirePackage{lipsum}
-\RequirePackage{siunitx}    % unidades
-\sisetup{per-mode=symbol}  % η = 30%
+\RequirePackage{listings}
+\RequirePackage[alf]{abntex2cite}
+\RequirePackage[acronym]{glossaries}
+\RequirePackage{siunitx}
+% ------------------------------------------------------------------------
+% PACOTE E CONFIGURAÇÃO DE LINKS (Navegação no PDF)
+% ------------------------------------------------------------------------
 
+\sisetup{per-mode=symbol}
 
-%CONFIGURAR CAPTION E SUBCAPTION
+% CONFIGURAR CAPTION E SUBCAPTION
 \captionsetup{font=footnotesize, labelfont=bf, margin = 25pt}
 
-%CONFIGURAR O AMBIENTE QUOTE
+% CONFIGURAR O AMBIENTE QUOTE
 \renewenvironment{quote}
 {\small\list{}{ \leftmargin=4cm \rightmargin=0cm \itshape \singlespacing}%
 \item\relax}
 {\endlist}
 
-%CONFIGURA UMA LINHA BONITINHA NOS CAPÍTULOS
-\newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray!75}{|}\hsp}{0pt}{\Huge\bfseries}
-%\titlespacing*{\chapter}{0pt}{-40pt}{40pt}
-\titlespacing*{\chapter}{0pt}{0pt}{40pt}  % sem asterisco
-%CONFIGURANDO O ESPAÇAMENTO
+% CONFIGURANDO O ESPAÇAMENTO
 \onehalfspacing
 
-%CONFIGURA O SUMÁRIO USANDO O titletoc
+% CONFIGURA O SUMÁRIO USANDO O titletoc (Adaptado para article)
 \titlecontents{section}
 [.5em] %
 {\smallskip}
-{\thecontentslabel\enspace}%\thecontentslabel
+{\textbf{\thecontentslabel}\enspace\textbf}
 {\hspace*{7.12em}}
-{\titlerule*[.75pc]{.}\contentspage}
+{\titlerule*[.75pc]{.}\textbf{\contentspage}}
 
 \titlecontents{subsection}
 [2.0em] %
 {\smallskip}
-{\textbf\thecontentslabel\enspace\textbf}%\thecontentslabel
+{\thecontentslabel\enspace}
 {\hspace*{7.12em}}
-{\titlerule*[.75pc]{.}\textbf\contentspage}
+{\titlerule*[.75pc]{.}\contentspage}
 
 \titlecontents{subsubsection}
 [4.5em] %
 {\smallskip}
-{\thecontentslabel\enspace}%\thecontentslabel
+{\thecontentslabel\enspace}
 {\hspace*{7.12em}}
 {\titlerule*[.75pc]{.}\contentspage}
 
-\titlecontents{figure}
-[-.2em] %
-{\smallskip}
-{\thecontentslabel\enspace}%\thecontentslabel
-{\hspace*{7.12em}}
-{\titlerule*[.75pc]{.}\contentspage}
-
-\titlecontents{table}
-[-.2em] %
-{\smallskip}
-{\thecontentslabel\enspace}%\thecontentslabel
-{\hspace*{7.12em}}
-{\titlerule*[.75pc]{.}\contentspage}
-
-%CONFIGURA O PACOTE nomencl
+% CONFIGURA O PACOTE nomencl
 \makenomenclature
 \renewcommand{\nomname}{\hfill Lista de Abreviaturas e Símbolos\hfill}
 \renewcommand\nomgroup[1]{%
@@ -106,29 +87,21 @@
         \ifstrequal{#1}{S}{Siglas}{}}%
     ]}
 
-
-%CONFIGURA O PACOTE chngcntr
-%\counterwithin{figure}{chapter}
-%\counterwithin{table}{chapter}
-\counterwithout{figure}{chapter}
-\counterwithout{table}{chapter}
 \RequirePackage[left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry}
 
-%CONFIGURA O fancyhdr
+% CONFIGURA O fancyhdr
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{15.1pt}
 \lhead{\leftmark}
 \rhead{Página \thepage}
 
-
-%RENOMEIA O table of contens
+% RENOMEIA O table of contens
 \AtBeginDocument{\renewcommand{\contentsname}{\hfill Sumário\hfill}}
 \AtBeginDocument{\renewcommand{\listfigurename}{\hfill Lista de figuras \hfill}}
 \AtBeginDocument{\renewcommand{\listtablename}{\hfill Lista de tabelas \hfill}}
 
 %%%%%%%% COMANDOS EXTRAS PARA VALORES DE CRIAÇÃO DA CAPA E CONTRA CAPA %%%%%%
-
 \newcommand{\getuniversidade}{}
 \newcommand{\universidade}[1]{\renewcommand{\getuniversidade}{#1}}
 
@@ -164,8 +137,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%CRIA A CAPA
+% CRIA A CAPA
 \newcommand{\criarcapa}{%
     \newpage
     \setcounter{page}{0}
@@ -188,8 +160,13 @@
     \textbf{\MakeUppercase{\@author}}
 
     \vspace{5cm}
+
+    {\textbf{\MakeUppercase{\getareaconcentracao}}}
+
+    \vspace{0.5cm}
+
     {\textbf{\MakeUppercase{\@title}}}
-    \vfill%    
+    \vfill%
     {
         \textbf{\getlocal}
 
@@ -198,8 +175,7 @@
     \par
     \vskip 1.5em}
 
-
-%CRIA A CONTRA-CAPA
+% CRIA A CONTRA-CAPA
 \newcommand{\criarcontracapa}{%
     \newpage
     \thispagestyle{empty}
@@ -214,6 +190,10 @@
 
     \vspace{2cm}
 
+    {\textbf{\MakeUppercase{\getareaconcentracao}}}
+
+    \vspace{0.5cm}
+
     {\textbf{\MakeUppercase{\@title}}}
 
     \vspace{2cm}
@@ -227,18 +207,14 @@
         \parbox{.48\textwidth}{%
             Atividade submetida à avaliação disciplinar do professor \xcapitalisewords{\getorientador} do Corpo Docente da \xcapitalisewords{\getuniversidade} como requisito para obtenção de aprovação disciplinar em \xcapitalisewords{\gettitulo} do bacharelado em \xcapitalisewords{\getcurso}.\\
 
-            Área de concentração: \getareaconcentracao
-
             Orientador: \xcapitalisewords{\getorientador}\\
 
             Belém-PA: \today
-
-        %Co-orientador: \xcapitalisewords{\getcoorientador}
         }%
     }
     \end{flushright}
 
-    \vfill%    
+    \vfill%
     {
         \textbf{\getlocal}
 
@@ -247,7 +223,7 @@
     \par
     \vskip 1.5em}
 
-%CRIA A FICHA CATALOGRÁFICA
+% CRIA A FICHA CATALOGRÁFICA
 \newcommand{\criarfichacatalografica}{
     \newpage
     \thispagestyle{empty}
@@ -268,7 +244,7 @@
     }
 }
 
-%CRIA A PÁGINA DE ASSINATURAS
+% CRIA A PÁGINA DE ASSINATURAS
 \newcommand{\criarpaginaassinatura}{
     \newpage
     \thispagestyle{empty}
@@ -295,7 +271,6 @@
     }
     \end{flushright}
 
-
     \vspace{\fill}
 
     \noindent\rule{.7\textwidth}{0.4pt}
@@ -303,33 +278,6 @@
     \getorientador
     \end{center}
 }
-
-
-\newcommand{\criarepigrafe}[2]{
-    \newpage
-    \thispagestyle{empty}
-    \null
-    \vfill
-
-    \begin{flushright}
-    {\setstretch{1.5}\noindent\mbox{%
-        \parbox{.8\textwidth}{%
-            \begin{flushleft}
-            \textit{#1}
-            \end{flushleft}
-
-            \begin{flushright}
-            (#2)
-            \end{flushright}
-
-        }%
-    }
-    }
-    \end{flushright}
-
-    \onehalfspacing
-}
-
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -356,4 +304,19 @@
 }
 
 \lstset{style=mystyle}
-  
+
+% ------------------------------------------------------------------------
+% CONFIGURAÇÃO DAS REFERÊNCIAS PARA A CLASSE ARTICLE
+% ------------------------------------------------------------------------
+\AtBeginDocument{%
+% Garante que o nome seja "Referências" em vez de "Bibliografia"
+    \renewcommand{\refname}{Referências}%
+
+    % Descomente a opção desejada abaixo:
+
+    % OPÇÃO 1: Referências numeradas (Ex: "5 Referências")
+    \renewcommand{\bibsection}{\section{\refname}}
+
+% OPÇÃO 2: Referências NÃO numeradas, mas inclusas no sumário
+% \renewcommand{\bibsection}{\section*{\refname}}
+}

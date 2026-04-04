@@ -1,35 +1,26 @@
-\chapter{Revisão Bibliográfica}
-\label{ch:revisao}
+\section{Revisão Bibliográfica}
+\label{sec:revisao}
 
 
-\section{Fundamentos de Máquinas de Fluxo Axial e Teorema de Euler}
-\label{sec:fundamentos}
+\subsection{Fundamentos de Máquinas de Fluxo Axial e Teorema de Euler}
+\label{subsec:fundamentos}
 As bombas de fluxo axial diferenciam-se fundamentalmente das centrífugas radiais por impulsionarem o fluido paralelamente ao seu eixo de rotação, mantendo essa direcionalidade tanto na sucção quanto no recalque\textsuperscript{}\textsuperscript{}\textsuperscript{}\textsuperscript{}. Essa categoria de turbomáquina é projetada para operar com altas velocidades específicas, sendo a solução ideal para sistemas industriais que demandam vazões elevadas e baixas alturas manométricas, como é o caso de circuladores de evaporadores\textsuperscript{}\textsuperscript{}\textsuperscript{}\textsuperscript{}.
 
 
 O princípio físico de transferência de energia nessas máquinas é regido pelo Teorema da Quantidade de Movimento Angular, classicamente conhecido como Teorema de Euler para Turbomáquinas \cite{fox2018, macintyre2013}. Segundo a literatura clássica de mecânica dos fluidos, o trabalho específico transferido do eixo para o fluido depende diretamente da variação da componente tangencial da velocidade absoluta da partícula fluida ao longo das pás do rotor.
 
 
-\section{Termodinâmica da Sucção e Fenômeno da Cavitação}
-\label{sec:cavitacao}
+\subsection{Termodinâmica da Sucção e Fenômeno da Cavitação}
+\label{subsec:cavitacao}
 
 A cavitação é um dos fenômenos mais críticos no projeto e na operação de sistemas de bombeamento. Ela ocorre por meio da vaporização localizada do fluido no interior da máquina, desencadeada quando a pressão estática local cai abaixo da pressão de vapor do líquido na temperatura de operação \cite{white2011}. O colapso violento dessas bolhas de vapor gera microjatos de altíssima pressão que causam fadiga e erosão severa no material do impelidor.
 
 Para aplicações envolvendo soluções aquosas a temperaturas elevadas, como a salmoura a 80°C prevista neste projeto\textsuperscript{}, a pressão de vapor do fluido aumenta significativamente. Esse fator reduz drasticamente o \textit{Net Positive Suction Head} disponível ($NPSH_d$) no sistema. Para garantir uma operação segura e livre de cavitação, a literatura técnica estabelece a premissa fundamental de que o $NPSH_d$ deve ser estritamente superior ao $NPSH_r$ (requerido), parâmetro este inerente ao projeto geométrico e hidrodinâmico fornecido pelo fabricante da bomba \cite{munson2013}.
 
 
-\section{Seleção de Materiais em Meios Salinos Corrosivos}
-\label{sec:material}
+\subsubsection{Seleção de Materiais em Meios Salinos Corrosivos}
+\label{subsec:material}
 
 A seleção metalúrgica para componentes de bombas operando com fluidos salinos exige um balanço rigoroso entre resistência química e viabilidade econômica \cite{Morrow2011}. Aços inoxidáveis austeníticos convencionais, embora versáteis, apresentam severas limitações em ambientes com alta concentração de cloretos e temperaturas elevadas, tornando-se suscetíveis à corrosão localizada (pites) e à corrosão sob tensão.
 
 Nesse cenário, os aços inoxidáveis Duplex, como a liga 2205 (UNS S32205), destacam-se por sua microestrutura bifásica equilibrada entre ferrita e austenita. Essa característica confere ao material propriedades mecânicas superiores e uma excelente proteção contra trincas e corrosão em frestas induzidas por cloretos \cite{JamesFritz2020, Langhe2025}. Alternativamente, as superligas à base de níquel-cromo, como o Hastelloy, oferecem resistência quase absoluta em meios oxidantes e redutores extremos. Contudo, seu elevado custo de aquisição e processamento térmico geralmente restringe sua aplicação a cenários operacionais onde o risco de falha catastrófica é inaceitável \cite{Artizono2024}.
-
-
-\section{3.4 Especificações Tecnológicas: Bombas Lewis e Acionamentos Eficientes}
-\label{sec:especificacoes}
-
-No âmbito de equipamentos dedicados a processos químicos severos, a linha de bombas axiais Lewis® VL destaca-se por sua construção \textit{heavy-duty} e elevada confiabilidade operacional. Projetadas especificamente para circulação em cristalizadores e evaporadores, essas bombas suportam condições extremas (vazões de até 13.628 m³/h e temperaturas de até 177°C), utilizando perfis hidrodinâmicos avançados que reduzem o $NPSH_r$ e arranjos de vedação dupla para mitigar vazamentos \cite{Weir2017, Weir2020}.
-
-Para o acionamento contínuo dessas turbomáquinas pesadas, a indústria padronizou o uso de motores elétricos de alta eficiência. Equipamentos com classificação de rendimento IR3 (Premium), como a linha W22 da WEG, entregam elevado conjugado com perdas elétricas minimizadas. Suas formas construtivas robustas e sistemas de ventilação otimizados garantem a dissipação térmica necessária para o funcionamento ininterrupto em plantas de processo \cite{WEG2025}.
-
